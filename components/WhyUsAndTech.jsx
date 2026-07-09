@@ -48,7 +48,7 @@ export default function WhyUsAndTech() {
       <div className="w-full max-w-7xl mx-auto relative z-10">
         
         {/* CORE GRID: TEXT LAYOUT vs FEATURES INTERFACE */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-10">
           
           {/* LEFT SIDE BLOCK: THE CORE VALUE STATEMENT */}
           <div className="lg:col-span-5 text-center lg:text-left">
@@ -57,18 +57,18 @@ export default function WhyUsAndTech() {
               <span className="text-[10px] font-black uppercase tracking-widest text-sky-700">The Agency Standard</span>
             </div>
             
-            <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 uppercase  ">
-              Why Global Brands <br className="hidden lg:block"/> Deploy With <span className="text-sky-600">Wepzite</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-slate-900 uppercase ">
+              Why <br className="hidden lg:block"/> Website With <span className="text-sky-600">Wepzite</span>
             </h2>
             
-            <p className="mt-4 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed">
+            <p className="mt-2 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed">
               We dissolve technical anxiety. By unifying elite visual identity creative suites with production-grade engineering, we output assets that build instant brand authority.
             </p>
 
             {/* Quick trust checklist indicator badges */}
             <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-3">
               {["100% Custom Logic", "Premium Global UI/UX", "Zero Bloat Code"].map((text, idx) => (
-                <div key={idx} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200/80 text-[10px] font-bold text-slate-600 normal-case">
+                <div key={idx} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full  border border-slate-200/80 text-[10px] font-medium bg-blue-50/50  text-slate-600 normal-case">
                   <CheckCircle2 size={11} className="text-emerald-500" />
                   <span>{text}</span>
                 </div>
@@ -106,7 +106,7 @@ export default function WhyUsAndTech() {
         </div>
 
         {/* ==================== BOTTOM MARQUEE: TECH STACK MATRIX ENGINE ==================== */}
-        <div className="mt-24 border border-sky-500/10 bg-slate-950 rounded-2xl p-4 md:p-6 shadow-xs relative overflow-hidden">
+        <div className=" border border-sky-500/10 bg-slate-950 rounded-2xl p-4 md:p-6 shadow-xs relative overflow-hidden">
           
           {/* Top Panel Code Chrome */}
           <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4 font-mono text-[10px]">

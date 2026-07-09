@@ -245,7 +245,7 @@ export default function Portfolio() {
       rel="noopener noreferrer"
       className="block group relative bg-white border border-sky-100 rounded-3xl p-3.5 overflow-hidden shadow-[0_4px_15px_rgba(14,165,233,0.01)] hover:shadow-[0_10px_25px_rgba(14,165,233,0.05)] hover:border-sky-300 transition-all duration-500"
     >
-      <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden relative bg-slate-50 border border-slate-100">
+      <div className="w-full aspect-[6/4] rounded-2xl overflow-hidden relative bg-slate-50 border border-slate-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img 
           src={project.image} 
@@ -258,16 +258,16 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <div className="mt-4 text-left">
-        <span className="text-[9px] font-black uppercase tracking-wider text-sky-600 bg-sky-50 px-2 py-0.5 rounded-full border border-sky-100">
+      <div className="mt-2 text-left">
+        <span className="text-[9px] font-semibold uppercase  text-sky-600 bg-sky-50 px-2 py-0.5 rounded-full border border-sky-100">
           {project.category}
         </span>
-        <h3 className="text-sm font-bold text-slate-800 mt-2.5 group-hover:text-sky-600 transition-colors uppercase tracking-tight truncate">
+        <h3 className="text-xs font-bold text-slate-800 mt-2.5 group-hover:text-sky-600 transition-colors uppercase  truncate">
           {project.title}
         </h3>
-        <div className="flex flex-wrap gap-1 mt-3 pt-2.5 border-t border-slate-50">
+        <div className="flex flex-wrap gap-1 mt- pt-2.5 border-t border-slate-50">
           {project.tech.map((techName, idx) => (
-            <span key={idx} className="text-[9px] font-mono text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded-md border border-slate-100">
+            <span key={idx} className="text-[9px] font-normal text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded-md border border-slate-100">
               {techName}
             </span>
           ))}
@@ -281,12 +281,12 @@ export default function Portfolio() {
       <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
         
         {/* HEADER */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-5">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-sky-50 rounded-full border border-sky-200/60 mb-4">
             <Sparkles size={12} className="text-sky-600 animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-widest text-sky-700">Enterprise Case Studies</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 uppercase tracking-tight">
+          <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-slate-900 uppercase ">
             Our Portfolio <span className="text-sky-600">In Motion</span>
           </h2>
         </div>
@@ -351,7 +351,7 @@ export default function Portfolio() {
             ref={row1Ref}
             modules={[Autoplay]}
             spaceBetween={20}
-            slidesPerView={2}
+            slidesPerView={1}
             loop={true}
             speed={4500}
             autoplay={{ delay: 0, disableOnInteraction: false }}

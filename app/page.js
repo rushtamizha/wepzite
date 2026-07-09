@@ -11,7 +11,14 @@ import React, { useEffect } from 'react'
 import Lenis from "lenis";
 const page = () => {
     useEffect(() => {
-    const lenis = new Lenis();
+   const lenis = new Lenis({
+  duration: 1,
+  lerp: 0.05,
+  smoothWheel: true,
+  wheelMultiplier: 1,
+  touchMultiplier: 2,
+  infinite: false,
+});
 
     function raf(time) {
       lenis.raf(time);

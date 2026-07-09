@@ -15,7 +15,7 @@ import {
 export default function Services() {
   const serviceItems = [
     {
-      icon: <Laptop className="w-6 h-6 text-sky-500 group-hover:text-white" />,
+      icon: <Laptop className="w-4 h-4 text-sky-500 group-hover:text-white" />,
       title: "Custom Web Development",
       badge: "Framework Elite",
       description: "From lightweight, semantic semantic structures to enterprise-grade Next.js architectures. We engineer lighting-fast, highly responsive web systems tailored strictly to your operational goals.",
@@ -66,15 +66,15 @@ export default function Services() {
       <div className="w-full max-w-7xl mx-auto relative z-10">
         
         {/* SECTION HEADER BLOCK */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        <div className="text-center max-w-3xl mx-auto mb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-sky-50 rounded-full border border-sky-200/60 mb-4">
             <Sparkles size={12} className="text-sky-600 animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-widest text-sky-700">Capabilities Matrix</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 uppercase tracking-tight">
-            Our Enterprise <span className="text-sky-600">Service Ecosystem</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-slate-900 uppercase">
+            Our Enterprise <span className="text-sky-600">Service</span>
           </h2>
-          <p className="mt-4 text-slate-600 font-medium max-w-xl mx-auto normal-case">
+          <p className="mt-2 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed  max-w-xl mx-auto  ">
             We eliminate technical overhead by consolidating your entire branding, engineering, and growth funnel into one world-class workflow.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function Services() {
               {/* Card Header Content */}
               <div>
                 <div className="flex items-center justify-between mb-5">
-                  <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center transition-colors group-hover:bg-sky-600  group-hover:border-sky-600">
+                  <div className="w-10 h-10 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center transition-colors group-hover:bg-sky-600  group-hover:border-sky-600">
                     <div className="transition-colors group-hover:text-white">
                       {service.icon}
                     </div>
@@ -104,18 +104,18 @@ export default function Services() {
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-sky-600 transition-colors uppercase tracking-tight">
+                <h3 className="text-sm font-bold text-slate-900 group-hover:text-sky-600 transition-colors uppercase tracking-tight">
                   {service.title}
                 </h3>
                 
-                <p className="mt-3 text-slate-500 text-xs leading-relaxed font-medium normal-case">
+                <p className="mt-1.5 text-slate-500 text-xs leading-relaxed font-normal ">
                   {service.description}
                 </p>
               </div>
 
               {/* Bottom Tech Pills Stack */}
-              <div className="mt-6 pt-4 border-t border-slate-50">
-                <div className="flex flex-wrap gap-1.5 mb-4">
+              <div className="mt-1 pt-2 border-t border-slate-50">
+                <div className="flex flex-wrap gap-1.5 mb-6">
                   {service.tech.map((techName, tIdx) => (
                     <span 
                       key={tIdx} 

@@ -67,10 +67,10 @@ export default function Testimonials() {
               <Sparkles size={12} className="text-sky-600 animate-pulse" />
               <span className="text-[10px] font-black uppercase tracking-widest text-sky-700">Verified Client Authority</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 uppercase ">
-              Enterprise <span className="text-sky-600">Client Reviews</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-slate-900 uppercase ">
+              Client <span className="text-sky-600"> Reviews</span>
             </h2>
-            <p className="mt-3 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed">
+            <p className="mt-2 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed">
               Real metrics from fast-growing businesses that trusted us to dismantle their technical overhead and optimize their web conversion funnels.
             </p>
           </div>
@@ -106,7 +106,7 @@ export default function Testimonials() {
         </div>
 
         {/* ==================== ACTIVE SWIPER CAROUSEL GRID PANELS ==================== */}
-        <div className="w-full testimonial-swiper-custom pb-12 cursor-grab active:cursor-grabbing">
+        <div className="w-full testimonial-swiper-custom  cursor-grab active:cursor-grabbing">
           <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={24}

@@ -144,15 +144,15 @@ export default function PricingAndCalculator() {
       <div className="w-full max-w-7xl mx-auto relative z-10">
         
         {/* SECTION HEADER CHROME */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-sky-50 rounded-full border border-sky-200/60 mb-4">
             <Sparkles size={12} className="text-sky-600 animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-widest text-sky-700">Transparent Pricing Ecosystem</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 uppercase tracking-tight">
-            Predictable <span className="text-sky-600">Investment Packages</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-slate-900 uppercase">
+            Packages
           </h2>
-          <p className="mt-3 text-slate-500 font-medium text-xs normal-case">
+          <p className="mt-2 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed   ">
             Select a core structural package below to initialize our interactive calculator configuration grid tool.
           </p>
         </div>

@@ -114,7 +114,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             custom={1}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-slate-900  uppercase"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-bold text-slate-900  uppercase"
           >
             Still Having old,{" "}
             <span className="text-sky-500 line-through decoration-rose-500/80 decoration-4">
@@ -129,7 +129,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             custom={2}
-            className="mt-3 text-lg sm:text-xl font-semibold text-slate-700  max-w-2xl mx-auto lg:mx-0"
+            className="mt-2 sm:font-medium text-slate-500 font-medium text-xs sm:text-sm md:text-xl normal-case leading-relaxed  max-w-2xl mx-auto lg:mx-0"
           >
             We transform passive viewers into highly profitable clients.
             Engineering enterprise-grade web applications utilizing
@@ -142,13 +142,13 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             custom={3}
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+            className="mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
           >
             <motion.button
               whileHover={{ scale: 1.0 }}
               whileTap={{ scale: 0.99 }}
               onClick={() => router.push("/contact")}
-              className="w-full sm:w-auto flex items-center justify-center gap-2.5 py-3.5 px-8 text-sm font-bold text-white tracking-wide uppercase rounded-full bg-gradient-to-r from-sky-500 to-sky-600   shadow-xs hover:shadow-sm active:ring-2 active:ring-sky-400/40 transition-all duration-300"
+              className="w-full sm:w-auto flex items-center justify-center gap-2.5 py-3.5 px-8 text-xs md:text-sm font-bold text-white tracking-wide uppercase rounded-full bg-gradient-to-r from-sky-500 to-sky-600   shadow-xs hover:shadow-sm active:ring-2 active:ring-sky-400/40 transition-all duration-300"
             >
               <span>Start Your Project</span>
               <ArrowRight size={16} />
@@ -158,7 +158,7 @@ export default function Hero() {
               whileHover={{ scale: 1.0 }}
               whileTap={{ scale: 0.99 }}
               onClick={() => router.push("/portfolio")}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 py-3.5 px-7 text-sm font-bold text-slate-600 rounded-full border border-slate-200 bg-white shadow-xs transition-all duration-300"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 py-3.5 px-7 text-xs md:text-sm font-bold text-slate-600 rounded-full border border-slate-200 bg-white shadow-xs transition-all duration-300"
             >
               <Code2 size={15} className="text-sky-600" />
               <span>Explore Tech Stack</span>
@@ -281,7 +281,7 @@ export default function Hero() {
                     },
                     {
                       title: "Social Media Integration",
-                      subtitle: "WhatsApp Business lead routing & share tools",
+                      subtitle: "WhatsApp Business lead routing & tools",
                       badge: "Instant Connect",
                       badgeColor:
                         "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
@@ -341,7 +341,7 @@ export default function Hero() {
                       {
                         title: "Social Media Integration",
                         subtitle:
-                          "WhatsApp Business lead routing & share tools",
+                          "WhatsApp Business lead routing & tools",
                         badge: "Instant Connect",
                         badgeColor:
                           "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
@@ -366,16 +366,16 @@ export default function Hero() {
                             {card.icon}
                           </div>
                           <div className="text-left font-sans">
-                            <div className="text-[11px] font-black text-white">
+                            <div className="text-[10px] font-medium text-white">
                               {card.title}
                             </div>
-                            <div className="text-[9px] font-medium text-slate-400 normal-case">
+                            <div className="text-[8px] sm:text-[10px] font-normal text-slate-400 ">
                               {card.subtitle}
                             </div>
                           </div>
                         </div>
                         <span
-                          className={`text-[8px] font-bold px-2 py-0.5 rounded-full border ${card.badgeColor}`}
+                          className={`text-[6px] sm:text-[8px] font-bold px-2 py-0.5 rounded-full border ${card.badgeColor}`}
                         >
                           {card.badge}
                         </span>

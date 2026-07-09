@@ -91,16 +91,16 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* LEFT COLUMN: BRAND DETAILS PANEL (Spans 5 Columns) */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-5 space-y-4">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-sky-50 rounded-full border border-sky-200/60 mb-4">
                 <Sparkles size={12} className="text-sky-600 animate-pulse" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-sky-700">Business Connections</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 uppercase tracking-tight">
-              Partner <span className="text-sky-600">with wepzite</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-slate-900 uppercase ">
+              Contact <span className="text-sky-600"> wepzite</span>
             </h2>
-              <p className="mt-4 text-slate-500 text-xs sm:text-sm normal-case leading-relaxed font-medium">
+              <p className="mt-2 text-slate-500 text-xs sm:text-sm normal-case leading-relaxed font-medium">
                 Collaborate with Magnivel Technologies to construct stable, maintainable, high-conversion software solutions tailored for continuous commercial growth.
               </p>
             </div>

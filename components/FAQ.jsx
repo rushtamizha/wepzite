@@ -51,16 +51,16 @@ export default function Faq() {
               <span className="text-[10px] font-black uppercase tracking-widest text-sky-700">Intellectual Clarity</span>
             </div>
             
-            <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 uppercase ">
+            <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-slate-900 uppercase ">
               Frequently Asked <br className="hidden lg:block"/> <span className="text-sky-600">Questions</span>
             </h2>
             
-            <p className="mt-4 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed">
+            <p className="mt-2 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed">
               Clear, transparent answers regarding our premium architecture, optimization engines, and development workflows.
             </p>
 
             {/* Premium Trust Cards Stack */}
-            <div className="mt-8 space-y-3 hidden sm:block">
+            <div className="mt-4 space-y-3 hidden sm:block">
               <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-2xl border border-slate-100">
                 <div className="w-8 h-8 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-sky-600">
                   <Clock size={14} />
@@ -87,7 +87,7 @@ export default function Faq() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={handleSupportRedirect}
-              className="mt-8 w-full lg:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 bg-slate-950 hover:bg-sky-600 text-white rounded-full text-xs font-black uppercase tracking-widest shadow-sm transition-colors duration-300"
+              className="mt-4 w-full lg:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 bg-slate-950 hover:bg-sky-600 text-white rounded-full text-xs font-black uppercase tracking-widest shadow-sm transition-colors duration-300"
             >
               <MessageCircle size={14} />
               <span>Ask a Custom Question</span>
