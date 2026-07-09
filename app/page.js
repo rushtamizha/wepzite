@@ -7,11 +7,25 @@ import PricingAndContact from '@/components/PricingAndContact'
 import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
 import WhyUsAndTech from '@/components/WhyUsAndTech'
-import React from 'react'
-import { ReactLenis } from '@studio-freight/react-lenis';
+import React, { useEffect } from 'react'
+import Lenis from "lenis";
 const page = () => {
+    useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
   return (
-    <ReactLenis root >
+    <div >
       <Hero/>
       <Portfolio/>
       <Services/>
@@ -20,7 +34,7 @@ const page = () => {
       <Contact/> 
       <Testimonials/> 
       <Faq/> 
-    </ReactLenis>
+    </div>
   )
 }
 
