@@ -58,7 +58,7 @@ export default function Contact() {
     const formattedMin = `₹${minBudget.toLocaleString("en-IN")}`;
 
     // Compile a highly precise corporate structure overview for your lead pipelines
-    let leadDossier = `*MAGNIVEL TECHNOLOGIES - NEW INQUIRY*\n`;
+    let leadDossier = `*wepzite TECHNOLOGIES - NEW INQUIRY*\n`;
     leadDossier += `------------------------------------------\n`;
     leadDossier += `• *Client:* ${formData.name}\n`;
     leadDossier += `• *Company:* ${formData.company || "Individual/Independent"}\n`;
@@ -75,7 +75,7 @@ export default function Contact() {
     setTimeout(() => {
       setFormStatus("success");
       const encodedText = encodeURIComponent(leadDossier);
-      const corporateWhatsApp = "YOUR_NUMBER_HERE"; // Enter your active Magnivel Business Line here
+      const corporateWhatsApp = "YOUR_NUMBER_HERE"; // Enter your active wepzite Business Line here
       window.open(`https://wa.me/${corporateWhatsApp}?text=${encodedText}`, "_blank");
     }, 800);
   };
@@ -101,7 +101,7 @@ export default function Contact() {
               Contact <span className="text-sky-600"> wepzite</span>
             </h2>
               <p className="mt-2 text-slate-500 text-xs sm:text-sm normal-case leading-relaxed font-medium">
-                Collaborate with Magnivel Technologies to construct stable, maintainable, high-conversion software solutions tailored for continuous commercial growth.
+                Collaborate with wepzite Technologies to construct stable, maintainable, high-conversion software solutions tailored for continuous commercial growth.
               </p>
             </div>
 
@@ -112,8 +112,8 @@ export default function Contact() {
                   <Mail size={12} className="text-sky-500" />
                   <span>Send an Inquiry</span>
                 </div>
-                <a href="mailto:contact@magnivel.com" className="text-xs font-bold text-slate-700 hover:text-sky-600 transition-colors">
-                  contact@magnivel.com
+                <a href="mailto:contact@wepzite.in" className="text-xs font-bold text-slate-700 hover:text-sky-600 transition-colors">
+                  contact@wepzite.in
                 </a>
               </div>
 
@@ -122,8 +122,8 @@ export default function Contact() {
                   <Globe size={12} className="text-sky-500" />
                   <span>Official Hub</span>
                 </div>
-                <a href="https://magnivel.com" target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-slate-700 hover:text-sky-600 transition-colors">
-                  magnivel.com
+                <a href="https://wepzite.in" target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-slate-700 hover:text-sky-600 transition-colors">
+                  wepzite.in
                 </a>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function Contact() {
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      placeholder="e.g., Magnivel Global" 
+                      placeholder="e.g., wepzite Global" 
                       className="w-full bg-slate-50 focus:bg-white border border-slate-200 focus:border-sky-500 rounded-xl px-4 py-3 text-xs text-slate-800 focus:outline-none transition-all font-semibold"
                     />
                   </div>

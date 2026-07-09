@@ -31,7 +31,7 @@ export default function AboutPage() {
   const milestones = [
     { year: "2024", title: "Foundation Layer Synced", desc: "Launched core web configuration services focusing on hyper-fast frontend engineering frameworks in regional sectors." },
     { year: "2025", title: "Automation Engine Scaling", desc: "Integrated advanced backend cloud hooks and automated WhatsApp Business categorization routing directly into active lead funnels." },
-    { year: "2026", title: "Magnivel Tech Rebrand", desc: "Expanded operations into comprehensive global corporate structures, serving enterprise entities across North America, Europe, UAE, and India." }
+    { year: "2026", title: "wepzite Tech Rebrand", desc: "Expanded operations into comprehensive global corporate structures, serving enterprise entities across North America, Europe, UAE, and India." }
   ];
 
   return (
@@ -64,7 +64,7 @@ export default function AboutPage() {
             Architecting Next-Gen <br /><span className="text-sky-600">Digital Infrastructure</span>
           </h1>
           <p className="mt-4 text-slate-500 font-medium text-xs sm:text-sm normal-case leading-relaxed">
-            Magnivel Technologies is a specialized software engineering collective. We dismantle traditional web design blockades to formulate performant Next.js, React Native, and automated customer retention funnels for fast-scaling enterprises worldwide.
+            wepzite Technologies is a specialized software engineering collective. We dismantle traditional web design blockades to formulate performant Next.js, React Native, and automated customer retention funnels for fast-scaling enterprises worldwide.
           </p>
         </div>
 

@@ -59,9 +59,10 @@ export const navData = [
     name: "Pricing",
     link: "/pricing",
     icon: <DollarSign size={16} />
-  },{
-    name: "About",
-    link: "/about",
-    icon: <DollarSign size={16} />
-  }
+  },
+  // {
+  //   name: "About",
+  //   link: "/about",
+  //   icon: <DollarSign size={16} />
+  // }
 ];
