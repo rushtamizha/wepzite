@@ -14,136 +14,155 @@ export default function Portfolio() {
 
   // Balanced split dataset to feed into opposite directions smoothly
   const datasetRow1 = [
-    {
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.chennaitopondicherryonewaytaxi.com.webp",
-      link: "https://chennaitopondicherryonewaytaxi.com",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/valparai-mahesh.webp",
-      link: "https://valparaiholidaytours.com",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.aventurakeralaholidays.webp",
-      link: "https://aventurakeralaholidays.com",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.blackantz.in.webp",
-      link: "https://blackantz.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.ddtoursandtravel.in.webp",
-      link: "https://ddtoursandtravel.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.ggvcabs.co.in.webp",
-      link: "https://ggvcabs.co.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.gotripcabs.in.webp",
-      link: "https://gotripcabs.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.kadal-arasan.in.webp",
-      link: "https://kadal-arasan.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.ortusaudios.in.webp",
-      link: "https://ortusaudios.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.nandhagroups.in.webp",
-      link: "https://nandhagroups.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },
-  ];
+  {
+    title: "Chennai to Pondicherry One Way Taxi",
+    category: "Taxi & Travel Website",
+    image: "/Portfolio/www.chennaitopondicherryonewaytaxi.com.webp",
+    link: "https://chennaitopondicherryonewaytaxi.com",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Valparai Holiday Tours",
+    category: "Tour & Travel Website",
+    image: "/Portfolio/valparai-mahesh.webp",
+    link: "https://valparaiholidaytours.com",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Aventura Kerala Holidays",
+    category: "Travel Agency Website",
+    image: "/Portfolio/www.aventurakeralaholidays.webp",
+    link: "https://aventurakeralaholidays.com",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Black Antz",
+    category: "Business Website",
+    image: "/Portfolio/www.blackantz.in.webp",
+    link: "https://blackantz.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "DD Tours & Travel",
+    category: "Travel Agency Website",
+    image: "/Portfolio/www.ddtoursandtravel.in.webp",
+    link: "https://ddtoursandtravel.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "GGV Cabs",
+    category: "Cab Booking Website",
+    image: "/Portfolio/www.ggvcabs.co.in.webp",
+    link: "https://ggvcabs.co.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Go Trip Cabs",
+    category: "Cab Booking Website",
+    image: "/Portfolio/www.gotripcabs.in.webp",
+    link: "https://gotripcabs.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Kadal Arasan",
+    category: "Seafood Business Website",
+    image: "/Portfolio/www.kadal-arasan.in.webp",
+    link: "https://kadal-arasan.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Ortus Audios",
+    category: "Audio Equipment Website",
+    image: "/Portfolio/www.ortusaudios.in.webp",
+    link: "https://ortusaudios.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Nandha Groups",
+    category: "Corporate Business Website",
+    image: "/Portfolio/www.nandhagroups.in.webp",
+    link: "https://nandhagroups.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+];
+
+const datasetRow2 = [
+  {
+    title: "Ganapathy One Way Drop Taxi",
+    category: "Taxi Booking Website",
+    image: "/Portfolio/www.ganapathyonewaydroptaxi.com.webp",
+    link: "https://ganapathyonewaydroptaxi.com",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "AK Travels",
+    category: "Travel Agency Website",
+    image: "/Portfolio/aktravels.in.webp",
+    link: "https://aktravels.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "DS Photography",
+    category: "Photography Portfolio Website",
+    image: "/Portfolio/dsphotography.co.in.webp",
+    link: "https://dsphotography.co.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "GMR Travels",
+    category: "Travel Agency Website",
+    image: "/Portfolio/gmrtravels.co.in.webp",
+    link: "https://gmrtravels.co.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Harizone",
+    category: "Business Website",
+    image: "/Portfolio/harizone.in.webp",
+    link: "https://harizone.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Josh Photography",
+    category: "Photography Portfolio Website",
+    image: "/Portfolio/joshphotography.co.in.webp",
+    link: "https://joshphotography.co.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "RR Tours",
+    category: "Tours & Travels Website",
+    image: "/Portfolio/rr-tours.com.webp",
+    link: "https://rr-tours.com",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Siloam Diagnostics",
+    category: "Healthcare & Diagnostics Website",
+    image: "/Portfolio/siloamdiagnostics.in.webp",
+    link: "https://siloamdiagnostics.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "Social Dynamics",
+    category: "Digital Marketing Platform",
+    image: "/Portfolio/socialdynamics.cloud.webp",
+    link: "https://socialdynamics.cloud",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "S Taxi",
+    category: "Taxi Booking Platform",
+    image: "/Portfolio/staxi.sonewaydroptaxi.in.webp",
+    link: "https://staxi.sonewaydroptaxi.in",
+    tech: ["Next.js", "Tailwind CSS"],
+  },
+];
 const handleGlobalMouseEnter = () => {
     row1Ref.current?.swiper?.autoplay?.stop();
     row2Ref.current?.swiper?.autoplay?.stop();
   };
 
-    const datasetRow2 = [
-    {
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/www.ganapathyonewaydroptaxi.com.webp",
-      link: "https://ganapathyonewaydroptaxi.com",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/aktravels.in.webp",
-      link: "https://aktravels.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/dsphotography.co.in.webp",
-      link: "https://dsphotography.co.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/gmrtravels.co.in.webp",
-      link: "https://gmrtravels.co.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/harizone.in.webp",
-      link: "https://harizone.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/joshphotography.co.in.webp",
-      link: "https://joshphotography.co.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/rr-tours.com.webp",
-      link: "https://rr-tours.com",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/siloamdiagnostics.in.webp",
-      link: "https://siloamdiagnostics.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/socialdynamics.cloud.webp",
-      link: "https://socialdynamics.cloud",
-      tech: ["Next.js", "Tailwind CSS"],
-    },{
-      title: "Wepzite Marketing Hub",
-      category: "Enterprise Web App",
-      image: "/Portfolio/staxi.sonewaydroptaxi.in.webp",
-      link: "https://staxi.sonewaydroptaxi.in",
-      tech: ["Next.js", "Tailwind CSS"],
-    },
-  ];
   const handleGlobalMouseLeave = () => {
     row1Ref.current?.swiper?.autoplay?.start();
     row2Ref.current?.swiper?.autoplay?.start();
