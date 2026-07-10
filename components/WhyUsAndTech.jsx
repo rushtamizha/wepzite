@@ -33,12 +33,22 @@ export default function WhyUsAndTech() {
   ];
 
   // Moving Technology Ribbon List Dataset (Duplicates for seamless loop)
-  const techStack = [
-    "Next.js", "React.js", "Tailwind CSS", "Framer Motion", "HTML5 Core", 
-    "JavaScript ES6+", "On-Page SEO Markups", "WhatsApp Business APIs", "Vercel Cloud",
-    "Next.js", "React.js", "Tailwind CSS", "Framer Motion", "HTML5 Core", 
-    "JavaScript ES6+", "On-Page SEO Markups", "WhatsApp Business APIs", "Vercel Cloud"
-  ];
+const techStack = [
+  // Core Frameworks & Languages
+  "Next.js", "React.js", "TypeScript", "JavaScript ES6+", "HTML5 Core",
+  
+  // Styling & Animation
+  "Tailwind CSS", "Framer Motion", "Styled Components", "CSS Modules",
+  
+  // Backend, Database & API
+  "Node.js", "PostgreSQL", "Prisma", "Supabase", "REST APIs", "GraphQL",
+  
+  // Utilities & Optimization
+  "TypeScript", "Zod", "TanStack Query", "On-Page SEO Markups",
+  
+  // Integration & Deployment
+  "WhatsApp Business APIs", "Vercel Cloud", "Docker", "Git", "CI/CD Pipelines"
+];
 
   return (
     <section id="why-us" className="relative w-full bg-white py-10 px-4 overflow-hidden">
@@ -111,13 +121,13 @@ export default function WhyUsAndTech() {
           {/* Top Panel Code Chrome */}
           <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4 font-mono text-[10px]">
             <div className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-slate-800 block" />
-              <span className="w-2 h-2 rounded-full bg-slate-800 block" />
-              <span className="w-2 h-2 rounded-full bg-slate-800 block" />
+              <span className="w-2 h-2 rounded-full bg-red-500 block" />
+              <span className="w-2 h-2 rounded-full bg-yellow-500 block" />
+              <span className="w-2 h-2 rounded-full bg-green-500 block" />
             </div>
             <div className="text-slate-500 uppercase tracking-widest flex items-center gap-1">
               <Terminal size={10} className="text-sky-500" />
-              framework-dependency-tree.json
+              Development Tools
             </div>
           </div>
 

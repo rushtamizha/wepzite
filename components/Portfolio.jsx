@@ -18,64 +18,132 @@ export default function Portfolio() {
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/www.chennaitopondicherryonewaytaxi.com.webp",
-      link: "https://wepzite.in",
+      link: "https://chennaitopondicherryonewaytaxi.com",
       tech: ["Next.js", "Tailwind CSS"],
     },{
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/valparai-mahesh.webp",
-      link: "https://wepzite.in",
+      link: "https://valparaiholidaytours.com",
       tech: ["Next.js", "Tailwind CSS"],
     },{
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/www.aventurakeralaholidays.webp",
-      link: "https://wepzite.in",
+      link: "https://aventurakeralaholidays.com",
       tech: ["Next.js", "Tailwind CSS"],
     },{
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/www.blackantz.in.webp",
-      link: "https://wepzite.in",
+      link: "https://blackantz.in",
       tech: ["Next.js", "Tailwind CSS"],
     },{
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/www.ddtoursandtravel.in.webp",
-      link: "https://wepzite.in",
+      link: "https://ddtoursandtravel.in",
       tech: ["Next.js", "Tailwind CSS"],
     },{
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/www.ggvcabs.co.in.webp",
-      link: "https://wepzite.in",
+      link: "https://ggvcabs.co.in",
       tech: ["Next.js", "Tailwind CSS"],
     },{
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/www.gotripcabs.in.webp",
-      link: "https://wepzite.in",
+      link: "https://gotripcabs.in",
       tech: ["Next.js", "Tailwind CSS"],
     },{
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/www.kadal-arasan.in.webp",
-      link: "https://wepzite.in",
+      link: "https://kadal-arasan.in",
       tech: ["Next.js", "Tailwind CSS"],
     },{
       title: "Wepzite Marketing Hub",
       category: "Enterprise Web App",
       image: "/Portfolio/www.ortusaudios.in.webp",
-      link: "https://wepzite.in",
+      link: "https://ortusaudios.in",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/www.nandhagroups.in.webp",
+      link: "https://nandhagroups.in",
       tech: ["Next.js", "Tailwind CSS"],
     },
-    
   ];
 const handleGlobalMouseEnter = () => {
     row1Ref.current?.swiper?.autoplay?.stop();
     row2Ref.current?.swiper?.autoplay?.stop();
   };
 
+    const datasetRow2 = [
+    {
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/www.ganapathyonewaydroptaxi.com.webp",
+      link: "https://ganapathyonewaydroptaxi.com",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/aktravels.in.webp",
+      link: "https://aktravels.in",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/dsphotography.co.in.webp",
+      link: "https://dsphotography.co.in",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/gmrtravels.co.in.webp",
+      link: "https://gmrtravels.co.in",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/harizone.in.webp",
+      link: "https://harizone.in",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/joshphotography.co.in.webp",
+      link: "https://joshphotography.co.in",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/rr-tours.com.webp",
+      link: "https://rr-tours.com",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/siloamdiagnostics.in.webp",
+      link: "https://siloamdiagnostics.in",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/socialdynamics.cloud.webp",
+      link: "https://socialdynamics.cloud",
+      tech: ["Next.js", "Tailwind CSS"],
+    },{
+      title: "Wepzite Marketing Hub",
+      category: "Enterprise Web App",
+      image: "/Portfolio/staxi.sonewaydroptaxi.in.webp",
+      link: "https://staxi.sonewaydroptaxi.in",
+      tech: ["Next.js", "Tailwind CSS"],
+    },
+  ];
   const handleGlobalMouseLeave = () => {
     row1Ref.current?.swiper?.autoplay?.start();
     row2Ref.current?.swiper?.autoplay?.start();
@@ -167,6 +235,27 @@ const handleGlobalMouseEnter = () => {
             className="portfolio-staggered-marquee w-full"
           >
             {datasetRow1.map((project, idx) => (
+              <SwiperSlide key={`r1-${idx}`}>
+                <ProjectCard project={project} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <Swiper
+            ref={row2Ref}
+            modules={[Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            loop={true}
+            speed={4500}
+            autoplay={{ delay: 0, disableOnInteraction: false , reverseDirection: true }}
+            breakpoints={{
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+            }}
+            className="portfolio-staggered-marquee w-full"
+          >
+            {datasetRow2.map((project, idx) => (
               <SwiperSlide key={`r1-${idx}`}>
                 <ProjectCard project={project} />
               </SwiperSlide>

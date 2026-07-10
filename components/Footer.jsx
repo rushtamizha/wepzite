@@ -1,6 +1,7 @@
+
 "use client";
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Terminal, Cpu, ArrowUpRight, FolderGit2, Compass, MapPin, Globe } from "lucide-react";
 import Link from "next/link";
 import { company, navData } from "@/utils/data";
@@ -12,9 +13,9 @@ export default function Footer() {
   const companyName = typeof company === 'object' && !Array.isArray(company) ? company.name : (company?.[0]?.name || "Wepzite");
 
   const systemEndPoints = [
-    { name: "custom-web-router", path: "/services/web" },
-    { name: "whatsapp-webhook-api", path: "/services/automation" },
-    { name: "onpage-seo-schema", path: "/services/seo" }
+    { name: "terms-conditions", path: "/terms" },
+    { name: "payment-refund-policy", path: "/payment-and-refund-policy" },
+    { name: "privacy-policy", path: "/privacy-policy" }
   ];
 
   const handleScrollToTop = () => {
@@ -75,7 +76,7 @@ export default function Footer() {
           {/* DYNAMIC DEVELOPMENT ARRAYS & MAPS EMBED (Spans 7 Columns) */}
           <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-12 gap-8 pt-2">
             
-            {/* Left Subsection: Core Routing Matrix Trees (5 Columns) */}
+            {/* Left Subsection: Core Routing Matrix Trees (Spans 5 Columns) */}
             <div className="md:col-span-5 space-y-6">
               
               {/* System Navigation Indices */}
@@ -85,7 +86,7 @@ export default function Footer() {
                   <span>app-router-tree</span>
                 </div>
                 <div className="grid grid-cols-1 gap-2">
-                  {navData.map((link, idx) => (
+                  {navData.map((link) => (
                     <Link 
                       key={link.name} 
                       href={link.link || "#"} 
@@ -107,25 +108,24 @@ export default function Footer() {
                 </div>
                 <div className="grid grid-cols-1 gap-2 text-xs font-bold text-slate-500">
                   {systemEndPoints.map((endpoint, i) => (
-                    <div 
+                    <Link href={endpoint.path} 
                       key={i}
-                      onMouseEnter={() => setOpenFaqIdx ? null : setHoveredIndex(i)}
+                      onMouseEnter={() => setHoveredIndex(i)}
                       onMouseLeave={() => setHoveredIndex(null)}
                       className="flex items-center justify-between cursor-pointer transition-colors hover:text-slate-300 group"
-                    >
-                      <span className="text-slate-400">GET // {endpoint.name}</span>
+                    > <span className="text-slate-400">GET // {endpoint.name}</span>
                       <span className="text-[9px] text-slate-600 font-normal group-hover:text-emerald-400 transition-colors">
                         {hoveredIndex === i ? "200_OK" : "FETCH"}
                       </span>
-                    </div>
-                  ))}
+                    </Link>
+                  ))} 
                 </div>
               </div>
+              </div>
 
-            </div>
 
-            {/* Right Subsection: Interactive Matrix Map HUD (7 Columns) */}
-            <div className="md:col-span-7 space-y-3">
+            {/* Right Subsection: Interactive Matrix Map HUD (Spans 7 Columns) */}
+            <div className="md:col-span-7 space-y-3 hidden">
               <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-900 pb-2 mb-2 flex items-center gap-1.5">
                 <MapPin size={12} className="text-sky-500" />
                 <span>geolocational-coordinates</span>
@@ -135,12 +135,12 @@ export default function Footer() {
               <motion.div 
                 whileHover={{ borderColor: "rgba(14, 165, 233, 0.25)" }}
                 transition={{ duration: 0.3 }}
-                className="w-full h-48 rounded-2xl overflow-hidden border border-slate-900 bg-slate-950 shadow-2xl relative grayscale contrast-[1.2] opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+                className="w-full h-48 rounded-2xl overflow-hidden border border-slate-900 bg-slate-950 shadow-2xl relative     transition-all duration-500"
               >
                 {/* Embedded digital map iframe node */}
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.333190807098!2d76.9536839!3d10.2346995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba79ef3a8151595%3A0x4e8b339ab3b1c419!2sValparai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin" 
-                  className="w-full h-full border-0 absolute inset-0 mix-blend-screen hover:mix-blend-normal transition-all"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.2073503305105!2d77.41265590962611!3d9.83294513767731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b071b20a8131595%3A0x4e8b339ac3b1c419!2sWepzite!5e0!3m2!1sen!2sin!4v1783671310084!5m2!1sen!2sin" 
+                  className="w-full h-full border-0 absolute inset-0  transition-all"
                   allowFullScreen="" 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
@@ -154,9 +154,9 @@ export default function Footer() {
         </div>
 
         {/* ==================== LOWER BLOCK: METRIC SPLIT FOOTNOTE ==================== */}
-        <div className="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[9px] font-bold text-slate-500 tracking-widest uppercase">
+        <div className="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[9px] font-bold text-slate-500 tracking-wide uppercase">
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1">
-            <span>© {new Date().getFullYear()} {companyName} Labs Matrix.</span>
+            <span>© {new Date().getFullYear()} {companyName}.in</span>
             <span className="text-slate-700 font-normal normal-case tracking-normal">All bundles compiled cleanly.</span>
           </div>
 
@@ -168,7 +168,7 @@ export default function Footer() {
             className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900 hover:bg-slate-900/80 text-slate-400 hover:text-sky-400 border border-slate-900 transition-colors cursor-pointer"
           >
             <Globe size={11} className="text-sky-400 animate-pulse" />
-            <span>sys_return_to_top()</span>
+            <span>return_to_top()</span>
           </motion.button>
         </div>
 

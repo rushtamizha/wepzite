@@ -204,7 +204,7 @@ export default function PricingAndCalculator() {
                   onClick={() => handleOpenCalculatorModal(plan)}
                   className={`w-full py-2.5 rounded-full text-xs font-black uppercase tracking-wider text-center flex items-center justify-center gap-2   border border-slate-200 hover:border-sky-300 text-slate-700  transition-colors ${
                 plan.popular 
-                  ?  "bg-gradient-to-r from-sky-500 to-sky-600 text-white" 
+                  ?  "bg-gradient-to-r from-sky-500 to-sky-700 hover:from-sky-500 hover:to-sky-600 text-white" 
                   : " hover:text-sky-500"
               }`}
                 >
@@ -311,7 +311,7 @@ export default function PricingAndCalculator() {
                 {/* WhatsApp Dynamic Forward Button */}
                 <button
                   onClick={handleForwardToWhatsApp}
-                  className="w-full py-3 rounded-full text-xs font-black uppercase tracking-widest text-center flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-400 hover:to-sky-500 text-white shadow-md shadow-sky-500/10 active:ring-2 active:ring-sky-400/40 transition-all duration-300"
+                  className="w-full py-3 rounded-full text-xs font-black uppercase tracking-widest text-center flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 to-sky-700 hover:from-sky-500 hover:to-sky-600 text-white shadow-md shadow-sky-500/10 active:ring-2 active:ring-sky-400/40 transition-all duration-300"
                 >
                   <MessageCircle size={14} />
                   <span>Initialize Project Via WhatsApp</span>

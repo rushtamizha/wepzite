@@ -94,7 +94,7 @@ export default function Services() {
               {/* Card Header Content */}
               <div>
                 <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center transition-colors group-hover:bg-sky-600  group-hover:border-sky-600">
+                  <div className="w-10 h-10 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center transition-colors bg-gradient-to-r group-hover:from-sky-500 group-hover:to-sky-700 ">
                     <div className="transition-colors group-hover:text-white">
                       {service.icon}
                     </div>

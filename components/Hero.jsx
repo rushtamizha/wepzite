@@ -6,9 +6,6 @@ import {
   Code2,
   Sparkles,
   Terminal,
-  Layers,
-  Laptop,
-  CloudLightning,
   Zap,
   Target,
   Rocket,
@@ -148,7 +145,7 @@ export default function Hero() {
               whileHover={{ scale: 1.0 }}
               whileTap={{ scale: 0.99 }}
               onClick={() => router.push("/contact")}
-              className="w-full sm:w-auto flex items-center justify-center gap-2.5 py-3.5 px-8 text-xs md:text-sm font-bold text-white tracking-wide uppercase rounded-full bg-gradient-to-r from-sky-500 to-sky-600   shadow-xs hover:shadow-sm active:ring-2 active:ring-sky-400/40 transition-all duration-300"
+              className="w-full sm:w-auto flex items-center justify-center gap-2.5 py-3.5 px-8 text-xs md:text-sm font-bold text-white tracking-wide uppercase rounded-full bg-gradient-to-r from-sky-500 to-sky-700   shadow-xs hover:shadow-sm active:ring-2 active:ring-sky-400/40 transition-all duration-300"
             >
               <span>Start Your Project</span>
               <ArrowRight size={16} />

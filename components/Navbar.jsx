@@ -149,7 +149,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => router.push("/contact")}
-            className="flex items-center gap-2 py-2 px-5 text-xs font-bold text-white tracking-wide uppercase transition-all rounded-full bg-gradient-to-r from-sky-400 to-sky-500   shadow-sm hover:shadow-xs transition-shadow active:ring-2 active:ring-sky-400/40"
+            className="py-2 px-4 bg-gradient-to-r from-sky-500 to-sky-700 hover:from-sky-500 hover:to-sky-600  text-white rounded-full text-xs font-bold uppercase  text-center tracking-wider flex items-center justify-center gap-2 shadow-md shadow-sky-500/10 active:ring-2 active:ring-sky-400/40 transition-all duration-300 cursor-pointer"
           >
             <MessageCircle size={14} /> Book Now
           </motion.button>

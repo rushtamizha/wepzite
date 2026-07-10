@@ -58,7 +58,7 @@ export default function Contact() {
     const formattedMin = `₹${minBudget.toLocaleString("en-IN")}`;
 
     // Compile a highly precise corporate structure overview for your lead pipelines
-    let leadDossier = `*wepzite TECHNOLOGIES - NEW INQUIRY*\n`;
+    let leadDossier = `*wepzite - NEW INQUIRY*\n`;
     leadDossier += `------------------------------------------\n`;
     leadDossier += `• *Client:* ${formData.name}\n`;
     leadDossier += `• *Company:* ${formData.company || "Individual/Independent"}\n`;
@@ -75,7 +75,7 @@ export default function Contact() {
     setTimeout(() => {
       setFormStatus("success");
       const encodedText = encodeURIComponent(leadDossier);
-      const corporateWhatsApp = "YOUR_NUMBER_HERE"; // Enter your active wepzite Business Line here
+      const corporateWhatsApp = "919626850192"; // Enter your active wepzite Business Line here
       window.open(`https://wa.me/${corporateWhatsApp}?text=${encodedText}`, "_blank");
     }, 800);
   };
@@ -137,28 +137,6 @@ export default function Contact() {
                 <div className="text-left leading-tight">
                   <div className="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Response Time</div>
                   <div className="text-[11px] font-bold text-slate-700 mt-0.5">Within 24 hours guaranteed</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 p-2.5 bg-white border border-slate-200/60 rounded-2xl shadow-3xs">
-                <div className="w-7 h-7 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-emerald-600 flex-shrink-0">
-                  <ShieldCheck size={13} />
-                </div>
-                <div className="text-left leading-tight">
-                  <div className="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Secure Defaults</div>
-                  <div className="text-[11px] font-bold text-slate-700 mt-0.5">NDAs & data-encryption ready</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 p-2.5 bg-white border border-slate-200/60 rounded-2xl shadow-3xs">
-                <div className="w-7 h-7 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-purple-600 flex-shrink-0 mt-0.5">
-                  <MapPin size={13} />
-                </div>
-                <div className="text-left leading-tight">
-                  <div className="text-[8px] font-bold text-slate-400 uppercase tracking-wider">Global Delivery</div>
-                  <p className="text-[10px] text-slate-500 font-medium leading-relaxed mt-1 normal-case">
-                    Serving enterprise accounts across India, North America, Europe, UAE, and Southeast Asia.
-                  </p>
                 </div>
               </div>
             </div>
@@ -323,7 +301,7 @@ export default function Contact() {
                     whileTap={{ scale: 0.99 }}
                     type="submit"
                     disabled={formStatus === "compiling"}
-                    className="w-full py-3.5 bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-400 hover:to-sky-500 disabled:from-slate-400 disabled:to-slate-500 text-white rounded-full text-xs font-black uppercase tracking-widest text-center flex items-center justify-center gap-2 shadow-md shadow-sky-500/10 active:ring-2 active:ring-sky-400/40 transition-all duration-300 cursor-pointer"
+                    className="w-full py-3.5 bg-gradient-to-r from-sky-500 to-sky-700 hover:from-sky-500 hover:to-sky-600 disabled:from-slate-400 disabled:to-slate-500 text-white rounded-full text-xs font-black uppercase tracking-widest text-center flex items-center justify-center gap-2 shadow-md shadow-sky-500/10 active:ring-2 active:ring-sky-400/40 transition-all duration-300 cursor-pointer"
                   >
                     <Send size={13} />
                     <span>{formStatus === "compiling" ? "Packaging Strategic Intent..." : "Send Project Inquiry"}</span>
