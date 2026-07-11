@@ -135,7 +135,7 @@ export default function PricingAndCalculator() {
     invoiceMessage += `Hi! I configured this package configuration using your builder layout and want to align on deploy initialization.`;
 
     const encodedText = encodeURIComponent(invoiceMessage);
-    const destinationNumber = "YOUR_NUMBER_HERE"; // Enter your actual business WhatsApp string here
+    const destinationNumber = "919626850192"; // Enter your actual business WhatsApp string here
     window.open(`https://wa.me/${destinationNumber}?text=${encodedText}`, "_blank");
   };
 

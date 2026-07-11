@@ -127,7 +127,7 @@ export default function Services() {
                 </div>
                 
                 {/* Micro CTA Link */}
-                <div className="flex items-center gap-1 text-xs font-bold text-sky-600 group-hover:gap-2 transition-all cursor-pointer">
+                <div className="flex items-center gap-1 text-xs font-bold text-sky-600 group-hover:gap-2 transition-all cursor-pointer hidden">
                   <span>Inquire Strategy</span>
                   <ArrowUpRight size={14} />
                 </div>
