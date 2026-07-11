@@ -14,33 +14,60 @@ export default function Testimonials() {
   // High-authority testimonial index data array
   const clientReviews = [
     {
-      name: "Rajesh Kumar",
-      role: "Managing Director",
-      company: "Vedic Luxury Stays",
-      logo: "🏨", // Replace with custom vector icons/images path
-      link: "https://vedicstays.in",
+      name: "Raj  Rajendran",
+      role: "Travel Agency Owner",
+      company: "SMR Travels",
+      logo: "https://www.smrtravels.in/logo.jpg", // Replace with custom vector icons/images path
+      link: "https://www.smrtravels.in/",
       tag: "E-Commerce Integration",
-      quote: "Wepzite completely transformed our digital infrastructure. Our bounce rate plummeted after moving to their Next.js architecture, and the integrated automated WhatsApp lead funnel has turned our cold website traffic into consistent bookings.",
+      quote: "Our new website for SMR Travels looks fantastic! The developer really understood our brand and made sure the layout is clean and professional. It’s much easier for our clients to find information about our cab services and tour packages now. Very happy with the final product!",
       rating: 5
     },
     {
-      name: "Ananya Sen",
-      role: "Operations Head",
-      company: "Pondy Tour & Fleet Services",
-      logo: "🚖",
-      link: "#",
+      name: "Mahesh Kumar",
+      role: "Travel Agency",
+      company: "Valparai Mahesh Travels",
+      logo: "https://www.valparaiholidaytours.com/logo.jpg",
+      link: "https://www.valparaiholidaytours.com",
       tag: "Custom Logic & Routing",
-      quote: "Absolute masters of premium UI/UX design. They built a custom taxi dispatch interface that coordinates booking vectors cleanly. The system performance is blindingly fast, and our organic local SEO visibility skyrocketed within weeks of indexing.",
+      quote: "Working with this developer for our Valparai Mahesh Travels website was a top-notch experience. In our local way, we look for someone who treats the work like their own, and that’s exactly what he did. Any time we pick up the call, he is there to answer. Even for small changes, he never asks for extra fees and completes everything with a complete premium finish. If you need a premium travel website developer in Tamil Nadu, he is the best choice!",
       rating: 5
     },
     {
-      name: "Vikram Malhotra",
-      role: "Founder",
-      company: "Apex Logistics Group",
-      logo: "📦",
-      link: "#",
+      name: "Karthik",
+      role: "Travel Agent",
+      company: "Chennai to Pondi cabs ",
+      logo: "https://www.chennaitopondicherryonewaytaxi.com/logo.png",
+      link: "https://www.chennaitopondicherryonewaytaxi.com/",
       tag: "Enterprise App Router",
-      quote: "We spent months dealing with slow, bloated WordPress platforms before finding Wepzite. They re-engineered our platform into a lightweight, high-performance web application. Absolute 10-out-of-10 enterprise communication.",
+      quote: "Highly recommend this team for business website development! They created a stunning, modern site for my taxi business that is fully mobile-responsive and incredibly user-friendly. The integration of our WhatsApp booking buttons and click-to-call features works flawlessly. If you need a reliable web developer to grow your online presence, this is the company to hire!",
+      rating: 5
+    }, {
+      name: "Jayam",
+      role: "Travel Agent",
+      company: "Chennai to Pondi cabs ",
+      logo: "https://www.rr-tours.com//logo.png",
+      link: "https://www.rr-tours.com/",
+      tag: "Enterprise App Router",
+      quote: "Excellent website creation service! The website developed for RR Tours & Stays looks very professional, modern, and user-friendly. The design perfectly represents our travel brand and makes it easy for customers to explore our tour packages and contact us. He understood our requirements clearly and delivered a smooth, responsive website. Highly recommended for anyone looking to build a professional business website",
+      rating: 5
+    }, {
+      name: "Ganesh",
+      role: "Photographer",
+      company: "Chennai to Pondi cabs ",
+      logo: "https://www.dsphotography.co.in/assets/logo-BFbzA054.png",
+      link: "https://www.dsphotography.co.in/",
+      tag: "Enterprise App Router",
+      quote: "Really I admired him the way of work he gave & also the Design & Working process were nice to go with him",
+      rating: 5
+    }, {
+      name: "Ganesh",
+      role: "Travel Agent",
+      company: "Chennai to Pondi cabs ",
+      logo: "https://www.gmrtravels.co.in/logo.png",
+      link: "https://www.gmrtravels.co.in/",
+      tag: "Enterprise App Router",
+      quote: "Very good sarvice very helpful good response always I'm really happy",
       rating: 5
     }
   ];
@@ -130,8 +157,8 @@ export default function Testimonials() {
                   <div>
                     {/* Header: Logo + Star Cluster */}
                     <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-50">
-                      <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-lg shadow-2xs">
-                        {review.logo}
+                      <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-lg shadow-2xs rounded-full">
+                        <img className="rounded-full" src={review.logo} alt={review.company} />
                       </div>
                       <div className="flex items-center gap-0.5 text-amber-400">
                         {[...Array(review.rating)].map((_, i) => (
