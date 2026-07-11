@@ -39,7 +39,7 @@ export const metadata = {
     template: "%s | Wepzite",
   },
   description:
-    `Wepzite builds Next.js websites, apps, e-commerce stores, and AI-branded visuals for businesses across Tamil Nadu — including ${districtNames}. Google Business Profile setup, Google Ads & Meta Ads management, and WhatsApp automation included. Fixed-rate packages from ₹2,999.`,
+    `Wepzite builds websites and AI-branded visuals for businesses across Tamil Nadu . Google Business Profile setup`,
   keywords: [
     "website design company Tamil Nadu",
     "web development company Tamil Nadu",
@@ -74,10 +74,10 @@ export const metadata = {
     siteName: siteConfig.companyName,
     title: "Wepzite — Website Design & Development Company in Tamil Nadu",
     description:
-      "Next.js websites, apps, e-commerce, AI branding, GMB setup, Google Ads & Meta Ads — for businesses across Tamil Nadu. Fixed-rate packages from ₹2,999.",
+      "Next.js websites, apps, e-commerce, AI branding, GMB setup, Google Ads & Meta Ads — for businesses across Tamil Nadu.Packages from ₹2,999.",
     images: [
       {
-        url: "/og/default.jpg",
+        url: "/og/og-image.png",
         width: 1200,
         height: 630,
         alt: "Wepzite — Website Design & Development Company",

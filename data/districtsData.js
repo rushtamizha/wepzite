@@ -17,10 +17,10 @@
  * ------------------------------------------------------------------
  */
 
-const COMPANY_NAME = 'YourCompany'; // TODO: replace with real brand name
-const DOMAIN = 'https://www.yourdomain.com'; // TODO: replace with real domain
-const PHONE = '+91-90000-00000'; // TODO
-const EMAIL = 'hello@yourdomain.com'; // TODO
+const COMPANY_NAME = 'Wepzite'; // TODO: replace with real brand name
+const DOMAIN = 'https://www.wepzite.in'; // TODO: replace with real domain
+const PHONE = '+91-96026850192'; // TODO
+const EMAIL = 'wepzitedev@gmail.com.com'; // TODO
 
 export const districts = [
   {
@@ -42,7 +42,7 @@ export const districts = [
         'ecommerce website design Chennai',
         'local SEO Chennai',
       ],
-      ogImage: '/og/chennai.jpg',
+      ogImage: '/og/og-image.png',
     },
     hero: {
       headline: 'Website Design Company in Chennai',
