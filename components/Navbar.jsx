@@ -24,7 +24,7 @@ export default function Navbar() {
   };
 
   // Safe accessor to handle both direct strings/objects or array-formatted configurations gracefully
-  const companyLogo = typeof company === 'object' && !Array.isArray(company) ? company.logo : (company?.[1]?.logo || company?.[0]?.logo || "/logo.webp");
+  const companyLogo = typeof company === 'object' && !Array.isArray(company) ? company.logo : (company?.[1]?.logo || company?.[0]?.logo || "/logo.png");
   const companyName = typeof company === 'object' && !Array.isArray(company) ? company.name : (company?.[0]?.name || "Wepzite");
 
   return (

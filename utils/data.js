@@ -21,7 +21,7 @@ import {
 
 export const company = {
     name:"Wepzite",
-    logo:"/logo.webp"
+    logo:"/logo.png"
 }
 export const navData = [
     {

@@ -117,7 +117,7 @@ export const metadata = {
   },
   verification: {
     // TODO: replace with your real Search Console HTML-tag verification code
-    google: "REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_CODE",
+    google: "WZ3lArZgFuE1KvmL5ybnlHNfwUzIsu8wGySj_0FTL7A",
   },
 };
 
