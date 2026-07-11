@@ -89,7 +89,7 @@ export const metadata = {
     title: "Wepzite — Website Design & Development Company in Tamil Nadu",
     description:
       "Next.js websites, apps, e-commerce, AI branding, GMB setup, Google Ads & Meta Ads — for businesses across Tamil Nadu.",
-    images: ["/og/default.jpg"],
+    images: ["/og/og-image.png"],
   },
   robots: {
     index: true,
