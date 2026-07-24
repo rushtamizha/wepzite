@@ -93,6 +93,12 @@ const datasetRow2 = [
     image: "/Portfolio/www.ganapathyonewaydroptaxi.com.webp",
     link: "https://ganapathyonewaydroptaxi.com",
     tech: ["Next.js", "Tailwind CSS"],
+  },{
+    title: "Golden One Way Drop Taxi",
+    category: "Taxi Booking Website",
+    image: "/Portfolio/www.goldenonewaytaxi.com.webp",
+    link: "https://www.goldenonewaytaxi.com.webp",
+    tech: ["Next.js", "Tailwind CSS"],
   },
   {
     title: "AK Travels",

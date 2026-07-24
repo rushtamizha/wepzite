@@ -189,7 +189,9 @@ export default function RootLayout({ children }) {
           />
         ))}
 
-        {/* Global Google Analytics (gtag.js) Next.js Injection Node */}
+
+
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SPBPL7W7WM"
           strategy="afterInteractive"
