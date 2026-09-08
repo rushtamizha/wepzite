@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   DESIGN TOKENS
+   The page is built from four surface "tones" that alternate down the
+   scroll: light -> tint -> dark -> brand. Every section picks a tone,
+   and every primitive in components/ui reads its colours from these
+   variables, so a tone change never needs per-component edits.
+   ------------------------------------------------------------------ */
+   .color-pix{
+    color: rgba(68, 239, 156, 0.14);
+   }
+@theme {
+  --color-brand-50:  #f2fbf5;
+  --color-brand-100: #94e1b2;
+  --color-brand-200: #5dcb89;
+  --color-brand-500: #3cbe70;
+  --color-brand-600: #299052;
+  --color-brand-700: #237243;
+
+  /* Section rhythm — replaces the flat py-10 every section used to use */
+  --spacing-section:    5rem;   /* 80px  — mobile  */
+  --spacing-section-lg: 7.5rem; /* 120px — desktop */
+}
+
+* {
+  scrollbar-width: none;
+  font-family: "Space Grotesk";
+}
+
+::-webkit-scrollbar { display: none; }
+
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Erases standard easing hooks to make marquee movement perfectly uniform */
+.portfolio-staggeemerald-marquee .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* Utility: hide a scrollbar on an inner scroll container */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Respect users who ask the OS to emeralduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
