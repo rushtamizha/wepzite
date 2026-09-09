@@ -87,8 +87,8 @@ export default function AboutPage() {
             variants={reveal}
             className="mt-5 text-3xl font-bold leading-[1.15] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl"
           >
-            A small team that builds{" "}
-            <span className="text-brand-600">websites that work</span>
+            About{" "}
+            <span className="text-brand-600">Wepzite</span>
           </motion.h1>
 
           <motion.p

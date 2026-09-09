@@ -97,7 +97,7 @@ export const theniServices = [
       { title: 'Brand-Led Website Design', description: 'Custom layout, colour system, and typography designed around your existing brand — not a recycled template.' },
       { title: 'Homestay & Agro-Tourism Site Design', description: 'Warm, photo-led layouts for Megamalai and Suruli Falls-area estate stays and homestays, built to convert a scroll into a booking enquiry.' },
       { title: 'Retail & Product Showcase Design', description: 'Clean, fast-loading catalogue layouts for Theni retail brands, designed to work as well on a phone as a desktop.' },
-      { title: 'Website emeraldesign & Visual Refresh', description: 'Modernising an outdated site\'s layout and visuals without necessarily rebuilding the whole backend.' },
+      { title: 'Website redesign & Visual Refresh', description: 'Modernising an outdated site\'s layout and visuals without necessarily rebuilding the whole backend.' },
       { title: 'Responsive Mobile-First Design', description: 'Every design is laid out mobile-first, then scaled up — most Theni visitors browse on a phone, not a desktop.' },
       { title: 'Design Systems & Style Guides', description: 'A reusable set of components and style rules so new pages stay visually consistent as your site grows.' },
     ],
@@ -110,7 +110,7 @@ export const theniServices = [
       'Full design files and assets handed over — nothing is locked into a proprietary builder.',
     ],
     faq: [
-      { q: 'Can you emeraldesign my existing website without rebuilding everything from scratch?', a: 'Yes, if the backend is sound we can often refresh the layout, photography, and visual system without a full rebuild.' },
+      { q: 'Can you redesign my existing website without rebuilding everything from scratch?', a: 'Yes, if the backend is sound we can often refresh the layout, photography, and visual system without a full rebuild.' },
       { q: 'Do you design websites specifically for homestays near Megamalai or Suruli Falls?', a: 'Yes, agro-tourism and homestay design is one of our regular Theni projects — warm, photo-led, booking-focused layouts.' },
       { q: 'Will my new website design work well on mobile phones?', a: 'Yes, every layout is designed mobile-first before being scaled up for desktop, not the other way around.' },
       { q: 'Can you improve the photography on my existing site?', a: 'We provide photo direction and colour correction as part of the design process for plantation and retail clients.' },

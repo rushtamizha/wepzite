@@ -107,10 +107,10 @@ export default function Contact({ tone = "light" }) {
                 <span>Email us</span>
               </div>
               <a
-                href="mailto:contact@wepzite.in"
+                href="mailto:wepzitedev@gmailcom"
                 className="inline-block py-1 text-xs font-bold text-slate-700 transition-colors hover:text-brand-600"
               >
-                contact@wepzite.in
+                wepzitedev@gmailcom
               </a>
             </div>
 

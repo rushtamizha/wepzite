@@ -176,7 +176,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* {jsonLdBlocks.map((block, i) => (
+        {jsonLdBlocks.map((block, i) => (
           <Script
             key={i}
             id={`jsonld-site-${block["@type"]}-${i}`}
@@ -221,7 +221,7 @@ export default function RootLayout({ children }) {
           />
         </noscript>
 
-        <Analytics /> */}
+        <Analytics />
         <Navbar />
         {children}
         <Footer />

@@ -155,7 +155,7 @@ export default function Testimonials() {
         </div>
 
         {/* GOOGLE RATING + REVIEW CTA */}
-        <div className="mx-auto flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 sm:flex-row lg:mx-0">
+        <div className="mx-auto flex flex-col w-full max-w-sm items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 sm:flex-row lg:mx-0">
           <div className="flex items-center gap-3 border-b border-white/10 pb-3 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-4">
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white p-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}

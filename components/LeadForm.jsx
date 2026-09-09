@@ -13,7 +13,7 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 
 const services = [
   "New website",
-  "emeraldesign of my existing site",
+  "redesign of my existing site",
   "Google Business Profile setup",
   "SEO / getting found on Google",
   "Mobile app",

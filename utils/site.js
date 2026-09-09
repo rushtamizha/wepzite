@@ -6,7 +6,7 @@
  * which sent visitors to a dead wa.me link). Import from here instead.
  */
 export const BUSINESS_WHATSAPP = "919626850192";
-export const BUSINESS_EMAIL = "contact@wepzite.in";
+export const BUSINESS_EMAIL = "wepzitedev@gmailcom";
 export const BUSINESS_SITE = "https://wepzite.in";
 
 /** Opens WhatsApp with a pre-filled message. */

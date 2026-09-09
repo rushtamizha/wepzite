@@ -76,7 +76,7 @@ export const metadata = {
     yandex: 'yandex-verification-token-placeholder',
     yahoo: 'yahoo-verification-token-placeholder',
     other: {
-      me: ['contact@wepzite.in'],
+      me: ['wepzitedev@gmailcom'],
       'facebook-domain-verification': ['fb-domain-verification-token-placeholder'],
     },
   },

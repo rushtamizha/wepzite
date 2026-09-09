@@ -5,7 +5,6 @@ import {
   getDistrictGeo,
   siteConfig,
 } from '@/data/districtsData';
-
 import Hero from '@/components/PageHero';
 import BlogWepzite from '@/components/BlogWepzite';
 import WhyWepzite from '@/components/WhyWepzite';
