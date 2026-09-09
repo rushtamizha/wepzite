@@ -27,8 +27,10 @@
  * ---------------------------------------------------------------------------
  */
 
+import { STATE_SLUG } from '@/utils/locationPaths';
+
 export const STATE = {
-  slug: 'tamilnadu',
+  slug: STATE_SLUG,
   name: 'Tamil Nadu',
   code: 'IN-TN',
   country: 'IN',
@@ -867,11 +869,10 @@ export function getSiblingTowns(districtSlug, townSlug, limit = 8) {
   return district.towns.filter((t) => t.slug !== townSlug).slice(0, limit);
 }
 
-/** URL builders — the one place path shapes are defined. */
-export const statePath = () => `/${STATE.slug}`;
-export const districtPath = (districtSlug) => `/${STATE.slug}/${districtSlug}`;
-export const townPath = (districtSlug, townSlug) =>
-  `/${STATE.slug}/${districtSlug}/${townSlug}`;
+// URL builders live in utils/locationPaths.js so client components can import
+// them without pulling this dataset into the browser bundle. Re-exported here
+// because the page files have always imported them from this module.
+export { SECTION_PREFIX, statePath, districtPath, townPath } from '@/utils/locationPaths';
 
 export function getCounts() {
   return {

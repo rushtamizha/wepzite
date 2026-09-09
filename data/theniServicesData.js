@@ -32,7 +32,7 @@ export const theniServices = [
       'Next.js developer Theni',
       'business portal development Theni',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'Website Development Company in Theni',
       subheadline:
@@ -82,7 +82,7 @@ export const theniServices = [
       'homestay website design Megamalai',
       'brand website design Theni',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'Web Design Company in Theni',
       subheadline:
@@ -132,7 +132,7 @@ export const theniServices = [
       'agro produce online store Cumbum',
       'ecommerce developer Theni',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'E-commerce Website Development in Theni',
       subheadline:
@@ -183,7 +183,7 @@ export const theniServices = [
       'marketing agency Cumbum Valley',
       'digital marketing services Theni',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'Digital Marketing Company in Theni',
       subheadline:
@@ -233,7 +233,7 @@ export const theniServices = [
       'keyword research Theni',
       'technical SEO Tamil Nadu',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'SEO Company in Theni',
       subheadline:
@@ -283,7 +283,7 @@ export const theniServices = [
       'Google Maps ranking Cumbum',
       'local business SEO Periyakulam',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'Local SEO Services in Theni',
       subheadline:
@@ -333,7 +333,7 @@ export const theniServices = [
       'map pack ranking Theni',
       'GBP optimization Tamil Nadu',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'Google Business Profile Optimization in Theni',
       subheadline:
@@ -383,7 +383,7 @@ export const theniServices = [
       'paid search agency Tamil Nadu',
       'Google Ads homestay Megamalai',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'Google Ads Agency in Theni',
       subheadline:
@@ -433,7 +433,7 @@ export const theniServices = [
       'social media agency Cumbum Valley',
       'social media marketing Megamalai homestay',
     ],
-    ogImage: '/og/theni.jpg',
+    ogImage: '/og/og-image.png',
     hero: {
       headline: 'Social Media Marketing in Theni',
       subheadline:

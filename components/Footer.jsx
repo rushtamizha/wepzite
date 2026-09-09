@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowUp, Mail, MessageCircle, MapPin, Globe } from "lucide-react";
 import { company } from "@/utils/data";
 import { BUSINESS_EMAIL, BUSINESS_WHATSAPP, openWhatsApp } from "@/utils/site";
+import { statePath, districtPath } from "@/utils/locationPaths";
 
 export default function Footer() {
   const companyLogo =
@@ -39,18 +40,22 @@ export default function Footer() {
       ],
     },
     {
-      // These four used to point at /seo-company-in-theni and friends, which
-      // were never built — so every page on the site carried four 404s in its
+      // These used to point at /seo-company-in-theni and friends, which were
+      // never built — so every page on the site carried four 404s in its
       // footer. They now point into the Tamil Nadu location tree, which is
       // also how crawlers reach the district and town pages from anywhere on
       // the site rather than only through the sitemap.
+      //
+      // Built with the shared path helpers rather than written out by hand:
+      // the hand-written versions missed the /website-development-company
+      // prefix and were 404ing again, site-wide, for exactly that reason.
       heading: "Areas we serve",
       links: [
-        { label: "All Tamil Nadu districts", href: "/tamilnadu" },
+        { label: "All Tamil Nadu districts", href: statePath() },
         { label: "Website development in Theni", href: "/website-development-company-in-theni" },
-        { label: "Web design in Chennai", href: "/tamilnadu/chennai" },
-        { label: "Web design in Coimbatore", href: "/tamilnadu/coimbatore" },
-        { label: "Web design in Madurai", href: "/tamilnadu/madurai" },
+        { label: "Web design in Chennai", href: districtPath("chennai") },
+        { label: "Web design in Coimbatore", href: districtPath("coimbatore") },
+        { label: "Web design in Madurai", href: districtPath("madurai") },
       ],
     },
   ];
