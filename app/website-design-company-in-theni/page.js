@@ -54,9 +54,9 @@ export const metadata = {
   
   // Canonical Link Layer Architecture
   alternates: {
-    canonical: `/website-design-company-in-${SLUG}`,
+    canonical: `/website-development-company-in-${SLUG}`,
     languages: {
-      'en-IN': `/website-design-company-in-${SLUG}`,
+      'en-IN': `/website-development-company-in-${SLUG}`,
     },
   },
 
@@ -108,7 +108,7 @@ export const metadata = {
   openGraph: {
     title: `Website Design Company in Theni | Next.js Engineering Group`,
     description: `Engineeemerald web systems for Theni enterprises. Premium Next.js apps, fluid WhatsApp automation, custom branding, and localized conversion optimization maps.`,
-    url: `/website-design-company-in-${SLUG}`,
+    url: `/website-development-company-in-${SLUG}`,
     siteName: siteConfig.companyName || 'Wepzite',
     locale: 'en_IN',
     type: 'website',

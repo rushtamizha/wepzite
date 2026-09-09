@@ -47,7 +47,7 @@ export default function Footer() {
       heading: "Areas we serve",
       links: [
         { label: "All Tamil Nadu districts", href: "/tamilnadu" },
-        { label: "Website design in Theni", href: "/website-design-company-in-theni" },
+        { label: "Website development in Theni", href: "/website-development-company-in-theni" },
         { label: "Web design in Chennai", href: "/tamilnadu/chennai" },
         { label: "Web design in Coimbatore", href: "/tamilnadu/coimbatore" },
         { label: "Web design in Madurai", href: "/tamilnadu/madurai" },

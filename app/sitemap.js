@@ -1,4 +1,4 @@
-import { getAllCityPaths, siteConfig } from '@/data/districtsData';
+import { getCuratedCitySlugs, slugToCityPath, siteConfig } from '@/data/districtsData';
 import {
   getAllDistricts,
   statePath,
@@ -17,6 +17,11 @@ import {
  * Priorities encode the hierarchy rather than being decoration: the state hub
  * and the flat district pages are the pages we most want crawled, district
  * hubs sit below them, and town pages below that.
+ *
+ * The full city list is NOT here. It is tens of thousands of URLs and a
+ * sitemap file may hold at most 50,000, so it is sharded in
+ * app/cities/sitemap.js and advertised separately in robots.txt. This file
+ * keeps the hand-written cities, which are the ones worth crawling first.
  */
 
 // Static routes that exist as folders under app/.
@@ -52,9 +57,9 @@ export default function sitemap() {
     entry(path, priority, changeFrequency),
   );
 
-  // Flat, hand-written district pages: /website-design-company-in-{city}
-  const cityEntries = getAllCityPaths().map((citySlug) =>
-    entry(`/${citySlug}`, 0.9, 'monthly'),
+  // The hand-written city pages. Every other city is in the sharded sitemap.
+  const cityEntries = getCuratedCitySlugs().map((slug) =>
+    entry(`/${slugToCityPath(slug)}`, 0.9, 'monthly'),
   );
 
   // The Tamil Nadu tree: state hub -> district hubs -> town pages.

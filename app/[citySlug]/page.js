@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import {
-  getAllCityPaths,
+  getPrerenderedCityPaths,
   getDistrictByCityPath,
   getDistrictGeo,
   siteConfig,
@@ -40,13 +40,19 @@ import Testimonials from '@/components/Testimonials';
  * Next matches static segments before dynamic ones.
  */
 
-// Only the paths listed by generateStaticParams exist. Anything else 404s
-// instead of being rendered on demand — which is what stops this route
-// becoming an open doorway-page generator for any URL someone invents.
-export const dynamicParams = false;
+// Cities not listed by generateStaticParams render on their first request and
+// are cached from then on, rather than all being built up front. Building all
+// of them does not fit on a build machine — see getPrerenderedCityPaths() in
+// data/districtsData.js for the arithmetic.
+//
+// This is NOT an open doorway-page generator: the render below calls
+// notFound() whenever getDistrictByCityPath() returns null, so a URL that is
+// not a city in CITIES still 404s. The lookup is the guard; the param list
+// only decides what is built early.
+export const dynamicParams = true;
 
 export function generateStaticParams() {
-  return getAllCityPaths().map((citySlug) => ({ citySlug }));
+  return getPrerenderedCityPaths().map((citySlug) => ({ citySlug }));
 }
 
 // ===========================================================================
@@ -56,8 +62,8 @@ export async function generateMetadata({ params }) {
   const { citySlug } = await params;
   const d = getDistrictByCityPath(citySlug);
 
-  // dynamicParams = false means this shouldn't happen, but a malformed entry
-  // in CITIES would otherwise fail the build with a confusing stack.
+  // An unknown slug reaches here before the page can call notFound(), so
+  // return empty metadata rather than throwing on `d.seo`.
   if (!d) return {};
 
   const city = d.district;
