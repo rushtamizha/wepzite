@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { ChevronDown, ChevronUp, Menu, X, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { company, navData } from "@/utils/data";
+import { lockSmoothScroll } from "@/utils/lenis";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -26,13 +27,17 @@ export default function Navbar() {
     setActiveMobileSection(null);
   }, [pathname]);
 
-  // Don't let the page scroll behind an open mobile sheet
+  // Don't let the page scroll behind an open mobile sheet. Smooth scrolling
+  // drives the window directly, so the overflow lock alone doesn't hold it —
+  // Lenis has to be paused too.
   useEffect(() => {
     if (!isMobileOpen) return;
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    const releaseSmoothScroll = lockSmoothScroll();
     return () => {
       document.body.style.overflow = previous;
+      releaseSmoothScroll();
     };
   }, [isMobileOpen]);
 

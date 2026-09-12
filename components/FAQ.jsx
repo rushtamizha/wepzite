@@ -17,26 +17,36 @@ import { BUSINESS_WHATSAPP } from "@/utils/site";
 export default function Faq({ items }) {
   const [openFaqIdx, setOpenFaqIdx] = useState(0); // Default open the first one for premium interactive layout
 
+  // Scope is deliberate: website development and Google Business Profile only,
+  // framed for Tamil Nadu. Figures below track the packages rendered by
+  // <PricingAndContact> on this same page — if a plan's price or support
+  // window changes there, change it here too or the page contradicts itself.
+  // Answers lead with the direct response so Google's AI Overviews and voice
+  // assistants can lift sentence one cleanly.
   const defaultFaqItems = [
     {
-      q: "What is your typical development timeline for a project?",
-      a: "Our core structural Next.js platforms are engineered and deployed within 7 to 14 business days. For massive enterprise-grade platforms or unlimited product E-Commerce systems with complex custom dashboards, timelines scale to 21-45 days depending on exact operational logic."
+      q: "How much does a website cost in Tamil Nadu?",
+      a: "A business website from Wepzite starts at \u20b92,999 for a five-page Starter Essential build, and most businesses choose the \u20b96,999 Growth plan. Business Pro is \u20b99,999 and online stores start at \u20b914,999. Every price is one-time and fixed before work begins \u2014 it covers design, development, hosting deployment, SSL and a free first-year domain, with no monthly platform fee and no per-page charges."
     },
     {
-      q: "Will my website be optimized for Google Search out of the box?",
-      a: "Absolutely. We do not do basic metadata entry. We build high-level on-page SEO frameworks including automated XML sitemaps, robots.txt management, semantic HTML5 tags, and correct JSON-LD Schema markup so Google indexes your architecture perfectly from day one."
+      q: "How long does it take to build a website?",
+      a: "Core builds are engineered and deployed in 7 to 14 working days. It starts with a short WhatsApp conversation about what your business does and who buys from you, then design, then development, then launch. E-commerce stores with cart logic, payment gateways and custom dashboards take longer depending on the operational logic involved."
     },
     {
-      q: "How does the WhatsApp automation integration help my business?",
-      a: "Instead of letting incoming traffic get lost in an email inbox, we build direct WhatsApp routing triggers. This instantly moves your high-intent viewers directly into personal chat feeds where you can set up smart labels to categorize hot leads versus routine support traffic instantly."
+      q: "Do you set up and optimise Google Business Profile?",
+      a: "Yes \u2014 GMB Setup & Optimization is \u20b91,499 as a standalone service. It covers creating or claiming the profile, category and business-info optimisation, logo and cover photos, your service and product listings, business hours and location mapping, Q&A seeding, and Google Maps pin verification support. We also run a NAP consistency check so the name, address and phone on your profile match your website exactly."
     },
     {
-      q: "What happens after the dedicated support period ends?",
-      a: "Every package comes with 7 to 45 days of priority monitoring. After that, your site runs completely maintenance-free due to our serverless Next.js architecture. If you need ongoing feature expansions or layout additions, we offer flexible monthly maintenance retainer tiers."
+      q: "Will my website show up for \u201cnear me\u201d searches in Tamil Nadu?",
+      a: "The website and the Google Business Profile do two different jobs, and you need both. Every site ships with on-page SEO, Schema.org structured data, an XML sitemap and robots.txt so Google can index it from day one \u2014 but it is the Business Profile that puts you in the local map pack for \u201cnear me\u201d searches. Reaching page one typically takes four to twelve weeks depending on how competitive your town and industry are."
+    },
+{
+      q: "What is the  cost of AMC?",
+      a: "The website maintanance cost is starting from \u20b95,000. Domain , Hosting and other ThirdParty Services Costs Not Included"
     },
     {
-      q: "Can I migrate my existing traditional website over to Next.js?",
-      a: "Yes. We specialize in dismantling slow, legacy platforms (like WordPress or basic builders) and re-engineering their entire layout, content, and link architecture into blazing-fast Next.js apps without losing your established Google keyword rankings."
+      q: "What happens after the site goes live?",
+      a: "Every package includes a dedicated support window \u2014 30 days on Starter Essential, and 365 days on the Growth, Product-Based and Business Pro builds as well as E-Commerce Essential. Beyond that the serverless Next.js architecture runs maintenance-free, and optional monthly retainers cover ongoing feature or layout work. GMB maintenance is available separately as weekly posts plus review and Q&A replies."
     }
   ];
 
@@ -63,8 +73,8 @@ export default function Faq({ items }) {
           </h2>
 
           <p className="mt-4 text-sm font-medium leading-relaxed text-slate-500">
-            Straight answers about timelines, SEO, and what happens after your
-            site goes live. Anything else, just ask.
+            Straight answers on website builds and Google Business Profile
+            setup across Tamil Nadu. Anything else, just ask.
           </p>
 
           <div className="mt-8 hidden space-y-3 sm:block">

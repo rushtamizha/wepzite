@@ -32,7 +32,7 @@ export const navData = [
   {
     name: "Services",
     icon: <Layers size={16} />,
-    link:"/services"
+    link:"/services",
     // dropdown: {
     //   "Development": [
     //     { title: "Landing Pages", description: "Premium one-way drops or round trips.", icon: Car, href: "/services/outstation" },

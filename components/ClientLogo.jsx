@@ -5,25 +5,33 @@ import { Autoplay, FreeMode } from "swiper/modules";
 
 import "swiper/css";
 
-/**
- * Swiper-driven client marquee.
- *
- * TODO(wepzite): `logo` currently points at the placeholder favicon for every
- * client. Drop transparent PNG/SVG marks into /public/clients and swap each
- * path (e.g. "/clients/blackantz.svg"). Any logo that fails to load falls
- * back to an initials badge, so a wrong path never renders as a broken image.
- */
 const PLACEHOLDER = "/apple-touch-icon.png";
 
 const clients = [
-  { label: "Blackantz", sector: "Pest Control", logo: PLACEHOLDER },
-  { label: "Harizone", sector: "Retail", logo: PLACEHOLDER },
-  { label: "Siloam Diagnostics", sector: "Healthcare", logo: PLACEHOLDER },
-  { label: "Josh Photography", sector: "Creative", logo: PLACEHOLDER },
-  { label: "GMR Travels", sector: "Travel", logo: PLACEHOLDER },
-  { label: "Sri Balaji Traders", sector: "Wholesale", logo: PLACEHOLDER },
-  { label: "Aarthi Interiors", sector: "Interiors", logo: PLACEHOLDER },
-  { label: "Nova Fitness", sector: "Fitness", logo: PLACEHOLDER },
+  { label: "Blackantz", sector: "Designing ", logo: "https://www.blackantz.in/favicon.ico" },
+  { label: "harizone", sector: "Learning Platform", logo: "/clientLogo/hari.avif" },
+  { label: "AventuraHolidays", sector: "Holidays & Tours", logo: "/clientLogo/aventura-logo.webp" },
+  { label: "Valparai Mahesh", sector: "Holidays & Tours", logo: "/clientLogo/logo-1.jpg" },
+  { label: "ChennaiPondicherryTaxi", sector: "Travels", logo: "/clientLogo/logo-1.png" },
+  { label: "Abu Holidays", sector: "Travels", logo: "/clientLogo/logo-1.webp" },
+  { label: "GGV CABS", sector: "Travels", logo: "/clientLogo/logo-2.jpg" },
+  { label: "NellaiTrack", sector: "Travels", logo: "/clientLogo/logo-2.webp" },
+  { label: "GoTripCabs", sector: "Travels", logo: "/clientLogo/logo-2.png" },
+  { label: "Kadal Arasan", sector: "Andaman Holidays", logo: "/clientLogo/logo-3.jpg" },
+  { label: "GreenTours", sector: "Travels", logo: "/clientLogo/logo-3.png" },
+  { label: "RR Tours", sector: "Travels", logo: "/clientLogo/logo-3.webp" },
+  { label: "OrtusAudios", sector: "Premium Home Theatre", logo: "/clientLogo/logo-4.jpg" },
+  { label: "GMR Travels", sector: "Travels", logo: "/clientLogo/logo-4.png" },
+  { label: "AK Travels", sector: "Travels", logo: "/clientLogo/logo-4.webp" },
+  { label: "Siloam HealthCare", sector: "HealthCare", logo: "/clientLogo/logo-5.jpg" },
+  { label: "Golden Taxi", sector: "Travels", logo: "/clientLogo/logo-5.webp" },
+  { label: "Ganapathy Travels", sector: "Travels", logo: "/clientLogo/logo-6.jpg" },
+  { label: "SST Travels", sector: "Travels", logo: "/clientLogo/logo-6.webp" },
+  { label: "SocialDynamics", sector: "DigitalMarketing", logo: "/clientLogo/logo-7.jpg" },
+  { label: "STAXI", sector: "Travels", logo: "/clientLogo/logo-7.webp" },
+  { label: "SBT Tours", sector: "Travels", logo: "/clientLogo/logo.png" },
+  { label: "MK Travels", sector: "Travels", logo: "/clientLogo/logo.jpg" },
+  { label: "DD Tours", sector: "Travels", logo: "/clientLogo/logo.webp" },
 ];
 
 function ClientMark({ label, logo }) {
@@ -53,7 +61,7 @@ function ClientMark({ label, logo }) {
       width={40}
       height={40}
       onError={() => setFailed(true)}
-      className="h-10 w-10 shrink-0 rounded-full object-contain"
+      className="h-10 w-10 shrink-0 rounded-full object-cover"
     />
   );
 }

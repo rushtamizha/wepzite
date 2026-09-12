@@ -6,6 +6,7 @@ import { ArrowUp, Mail, MessageCircle, MapPin, Globe } from "lucide-react";
 import { company } from "@/utils/data";
 import { BUSINESS_EMAIL, BUSINESS_WHATSAPP, openWhatsApp } from "@/utils/site";
 import { statePath, districtPath } from "@/utils/locationPaths";
+import { scrollToTop } from "@/utils/lenis";
 
 export default function Footer() {
   const companyLogo =
@@ -66,9 +67,9 @@ export default function Footer() {
     { label: "Payment & refund policy", href: "/payment-and-refund-policy" },
   ];
 
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  // Routed through Lenis when it's running, so the trip up uses the same
+  // easing as the rest of the page instead of racing the native animation.
+  const handleScrollToTop = () => scrollToTop();
 
   return (
     <footer className="relative w-full overflow-hidden border-t border-white/5 bg-slate-950 px-4 pb-8 pt-20 text-left">

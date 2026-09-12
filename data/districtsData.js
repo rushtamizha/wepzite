@@ -1564,10 +1564,22 @@ function buildDefaults(slug, name) {
 
     seo: {
       title: `Website Design Company in ${name} | Web Designer in ${name}`,
-      description: `Engineered web systems for ${name} enterprises. Premium Next.js apps, fluid WhatsApp automation, custom branding, and localized conversion optimization maps.`,
+      description: `Wepzite, Website Development Company in ${name}, Best Website Development Company in ${name}, Website Development in ${name}, Web Design Company in ${name}, Best Web Design Company in ${name}, Web Designers in ${name}, Professional Web Design in ${name}, Top Web Design in ${name}, Web Designs in ${name}, Web Design in ${name} District, Custom Web Development ${name}, SEO Friendly Web Design ${name}`,
       keywords: [
-        `website design company in ${name}`,
-        `web development company ${name}`,
+        `best website design company in ${name}`,
+        `best web development company ${name}`,
+        `Web design agency ${name}`,
+        `Custom web development services in ${name}`,
+        `Web designers near me ${name}`,
+        `Professional web design company in ${name}`,
+        `E-commerce website development in ${name}`,
+        `Small business website design ${name}`,
+        `Affordable web design company in ${name}`,
+        `Low cost website development in ${name}`,
+        `Website design packages and pricing ${name}`,
+        `React website designers in ${name}`,
+        `Fast loading SEO friendly web design ${name}`,
+        `Mobile responsive website designers ${name}`,
         `digital marketing agency ${name}`,
         `gmb optimization ${name}`,
         `app developers ${name}`,
@@ -1585,30 +1597,35 @@ function buildDefaults(slug, name) {
     // Rendered by <Faq items={...}> AND used to build the FAQPage schema, so
     // the two can never disagree. Google requires FAQ schema content to be
     // visible on the page; generating both from one array enforces that.
+    //
+    // Scope is website development + Google Business Profile only, per city.
+    // Two constraints to keep in mind when editing:
+    //  - Prices and support windows must match <PricingAndContact>, which
+    //    renders on this same page. Drift makes the page contradict itself.
+    //  - Keep `${name}` in the questions. This array is the FAQPage schema for
+    //    ~1000 city pages, so identical wording across them reads as
+    //    duplicate content.
     faq: [
       {
+        q: `How much does a website cost for a business in ${name}?`,
+        a: 'Websites start at \u20b92,999 for a five-page Starter Essential build, with most businesses choosing the \u20b96,999 Growth plan. Business Pro is \u20b99,999 and online stores start at \u20b914,999. Pricing is one-time and fixed before work begins \u2014 design, development, hosting deployment, SSL and a free first-year domain included, with no monthly platform fee.',
+      },
+      {
         q: `How long does it take to build a website for a business in ${name}?`,
-        a: 'Core Next.js platforms are engineered and deployed within 7 to 14 business days. Larger e-commerce systems with custom dashboards scale to 21-45 days depending on the operational logic involved.',
+        a: 'Core Next.js builds are engineered and deployed within 7 to 14 working days. Larger e-commerce systems with cart logic, payment gateways and custom dashboards scale beyond that depending on the operational logic involved.',
       },
       {
-        q: `Will my website rank on Google for searches in ${name}?`,
-        a: `Every build ships with local SEO in place — Google Business Profile setup, ${name}-specific schema markup, XML sitemaps, and semantic HTML — so you compete for local searches from day one rather than waiting on a separate SEO project.`,
+        q: `Do you set up and optimise Google Business Profile for businesses in ${name}?`,
+        a: `Yes \u2014 GMB Setup & Optimization is \u20b91,499 as a standalone service, and it is what puts you in the Google Maps results for ${name}. It covers creating or claiming the profile, category and business-info optimisation, logo and cover photos, service and product listings, business hours and location mapping, Q&A seeding, and Maps pin verification support, plus a NAP consistency check so your profile matches your website exactly.`,
       },
       {
-        q: `Do you work with small businesses in ${name} or only large companies?`,
-        a: `We build for both. A single-location shop in ${name} gets a fast, focused site sized to its needs; larger firms get multi-page platforms with custom dashboards. Pricing is fixed and quoted upfront either way.`,
+        q: `Will my website rank for \u201cnear me\u201d searches in ${name}?`,
+        a: `The website and the Business Profile do two different jobs and you need both. Every build ships with on-page SEO, ${name}-specific schema markup, XML sitemaps and semantic HTML so Google can index it from day one \u2014 while the Google Business Profile is what places you in the local map pack. Reaching page one typically takes four to twelve weeks depending on how competitive your trade is locally.`,
       },
+
       {
-        q: 'How does WhatsApp automation help my business?',
-        a: 'Instead of enquiries getting lost in an email inbox, we wire direct WhatsApp routing into the site. High-intent visitors land straight in your chat feed, where labels let you separate hot leads from routine support.',
-      },
-      {
-        q: `Can you migrate my existing ${name} business website to Next.js?`,
-        a: 'Yes. We rebuild slow legacy platforms — WordPress, Wix, and basic site builders — into fast Next.js apps, carrying over your content and link architecture so existing Google rankings survive the move.',
-      },
-      {
-        q: 'What happens after the site goes live?',
-        a: 'Every package includes a priority monitoring period after launch. Beyond that the serverless architecture runs maintenance-free, and optional monthly retainers cover ongoing feature and layout work.',
+        q: `What happens after my ${name} website goes live?`,
+        a: 'Every package includes a dedicated support window \u2014 30 days on Starter Essential, and 365 days on the Growth, Product-Based and Business Pro builds as well as E-Commerce Essential. Beyond that the serverless architecture runs maintenance-free, and optional monthly retainers cover ongoing feature or layout work as well as GMB posts and review replies.',
       },
     ],
   };
