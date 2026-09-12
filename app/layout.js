@@ -74,7 +74,7 @@ export const metadata = {
       "Next.js websites, apps, e-commerce, AI branding, GMB setup, Google Ads & Meta Ads — for businesses across Tamil Nadu.Packages from ₹2,999.",
     images: [
       {
-        url: "/og/og-image.png",
+        url: "/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png",
         width: 1200,
         height: 630,
         alt: "Wepzite — Website Design & Development Company",
@@ -86,7 +86,7 @@ export const metadata = {
     title: "Wepzite — Website Design & Development Company in Tamil Nadu",
     description:
       "Next.js websites, apps, e-commerce, AI branding, GMB setup, Google Ads & Meta Ads — for businesses across Tamil Nadu.",
-    images: ["/og/og-image.png"],
+    images: ["/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png"],
   },
   robots: {
     index: true,
@@ -176,7 +176,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {jsonLdBlocks.map((block, i) => (
+        {/* {jsonLdBlocks.map((block, i) => (
           <Script
             key={i}
             id={`jsonld-site-${block["@type"]}-${i}`}
@@ -184,7 +184,7 @@ export default function RootLayout({ children }) {
             strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }}
           />
-        ))}
+        ))} */}
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-672055830"

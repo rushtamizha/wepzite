@@ -11,7 +11,7 @@ export default function Services() {
     {
       img: "https://img.icons8.com/?size=100&id=32215&format=png&color=000000",
       title: "Google My Business (Setup & Optimization)",
-      thumbnail: "/services/google-my-business-setup.png",
+      thumbnail: "https://res.cloudinary.com/deamsuypj/image/upload/v1789119609/google-my-business-setup_dak8xh.png",
       badge: "Local SEO",
       description:
         "We set up and optimize your Google Business Profile to boost local visibility, build trust with nearby customers, and help you rank higher in local search and map results.",
@@ -25,7 +25,7 @@ export default function Services() {
     {
       img: "https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000",
       title: "Website Development",
-      thumbnail: "/services/website-development-in-tamil-nadu.png",
+      thumbnail: "https://res.cloudinary.com/deamsuypj/image/upload/v1789119600/website-development-in-tamil-nadu_dfjr36.png",
       badge: "Premium UI/UX",
       description:
         "High-performance websites engineeemerald with React, Next.js, and Tailwind CSS — enhanced with Framer Motion and Three.js for immersive, fluid interactions. Built mobile-first, SEO-optimized, and conversion-focused to turn visitors into customers.",
@@ -41,7 +41,7 @@ export default function Services() {
     {
       img: "https://img.icons8.com/?size=100&id=fKXXelWgP1B6&format=png&color=000000",
       title: "Native App Development",
-      thumbnail: "/services/application-development-in-tamil-nadu.png",
+      thumbnail: "https://res.cloudinary.com/deamsuypj/image/upload/v1789119609/application-development-in-tamil-nadu_ybuyqh.png",
       badge: "Multi-Platform",
       description:
         "Fluid, high-performance mobile apps built with React Native — sharing one codebase across iOS and Android without compromising on speed or native feel. Engineeemerald with clean state management and smooth, native-like interactions.",
@@ -55,7 +55,7 @@ export default function Services() {
     {
       img: "https://img.icons8.com/?size=100&id=QkXeKixybttw&format=png&color=000000",
       title: "Smart WhatsApp Automation",
-      thumbnail: "/services/whatsapp-automation.png",
+      thumbnail: "https://res.cloudinary.com/deamsuypj/image/upload/v1789119604/whatsapp-automation_mxnecz.png",
       badge: "Instant Connect",
       description:
         "Bridge the gap between your platforms and customer retention. We build intelligent WhatsApp Business automation funnels to categorize leads and handle instant booking routes.",
@@ -64,7 +64,7 @@ export default function Services() {
     {
       img: "https://img.icons8.com/?size=100&id=lIzGTzIFMKym&format=png&color=000000",
       title: "High-Level SEO Optimization",
-      thumbnail: "/services/seo-optmization.png",
+      thumbnail: "https://res.cloudinary.com/deamsuypj/image/upload/v1789119602/seo-optmization_gu9lr0.png",
       badge: "Rank Max",
       description:
         "Advanced data structuring, complete meta-tag configurations, and automated Google Search Console index maps. On-page SEO strategies that get your business discoveemerald organically.",
@@ -73,7 +73,7 @@ export default function Services() {
     {
       img: "https://img.icons8.com/?size=100&id=ka3InxFU3QZa&format=png&color=000000",
       title: "AI Branding & Digital Assets",
-      thumbnail: "/services/ai-creatives.png",
+      thumbnail: "https://res.cloudinary.com/deamsuypj/image/upload/v1789119602/ai-creatives_f2mygs.png",
       badge: "Premium Design",
       description:
         "Establishing your pristine visual identity. Utilizing specialized design tools to render high-clarity premium logos, marketing banners, and social assets that instantly command authority.",

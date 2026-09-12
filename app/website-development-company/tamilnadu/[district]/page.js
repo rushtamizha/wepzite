@@ -119,16 +119,6 @@ export default async function Page({ params }) {
 
 
 
-      {/* The index this page exists for. */}
-      <AreaLinks
-        title={`Towns and localities we cover in ${district.name}`}
-        subtitle={`Every location below has its own page, its own Google Business Profile work and schema naming that specific town — not one page covering the whole district.`}
-        links={district.towns.map((t) => ({
-          href: townPath(district.slug, t.slug),
-          label: t.name,
-          description: t.note,
-        }))}
-      />
 
       <BlogWepzite location={district.name} />
       <Services />

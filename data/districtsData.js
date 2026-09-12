@@ -42,7 +42,7 @@ const CURATED = [
         'ecommerce website design Chennai',
         'local SEO Chennai',
       ],
-      ogImage: '/og/og-image.png',
+      ogImage: '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png',
     },
     hero: {
       headline: 'Website Design Company in Chennai',
@@ -110,7 +110,7 @@ const CURATED = [
         'ecommerce website Coimbatore',
         'textile company website design',
       ],
-      ogImage: '/og/og-image.png',
+      ogImage: '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png',
     },
     hero: {
       headline: 'Website Design Company in Coimbatore',
@@ -178,7 +178,7 @@ const CURATED = [
         'ecommerce website Madurai',
         'website designer Anna Nagar Madurai',
       ],
-      ogImage: '/og/og-image.png',
+      ogImage: '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png',
     },
     hero: {
       headline: 'Website Design Company in Madurai',
@@ -246,7 +246,7 @@ const CURATED = [
         'college website design Trichy',
         'manufacturing website design Trichy',
       ],
-      ogImage: '/og/og-image.png',
+      ogImage: '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png',
     },
     hero: {
       headline: 'Website Design Company in Tiruchirappalli',
@@ -314,7 +314,7 @@ const CURATED = [
         'powerloom textile website Salem',
         'website designer Fairlands',
       ],
-      ogImage: '/og/og-image.png',
+      ogImage: '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png',
     },
     hero: {
       headline: 'Website Design Company in Salem',
@@ -381,7 +381,7 @@ const CURATED = [
         'agro business website Theni',
         'plantation company website design',
       ],
-      ogImage: '/og/og-image.png',
+      ogImage: '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png',
     },
     hero: {
       headline: 'Website Design Company in Theni',
@@ -1573,7 +1573,7 @@ function buildDefaults(slug, name) {
         `app developers ${name}`,
         `meta ads expert ${name}`,
       ],
-      ogImage: '/og/og-image.png',
+      ogImage: '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png',
     },
 
     hero: {

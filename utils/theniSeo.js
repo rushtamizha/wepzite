@@ -12,7 +12,7 @@ import { siteConfig } from "@/data/districtsData";
 
 export function buildTheniServiceMetadata(data) {
   const path = `/${data.slug}`;
-  const ogImage = data.ogImage || "/og/og-image.png";
+  const ogImage = data.ogImage || "/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png";
 
   return {
     metadataBase: new URL(siteConfig.domain || "https://www.wepzite.in"),

@@ -93,16 +93,7 @@ export default function Page() {
         description={`We build fast, mobile-first websites for businesses across all ${counts.districts} districts of Tamil Nadu and ${counts.towns} towns within them. Every location gets its own page, its own Google Business Profile work and schema naming that specific place — because a customer in Sivakasi does not search the same way as one in Ooty.`}
       />
 
-      {/* The directory. Every district hub is one click from here. */}
-      <AreaLinks
-        title={`All ${counts.districts} districts of ${STATE.name}`}
-        subtitle={`Pick your district to see the towns we cover inside it. Between them these pages cover ${counts.towns} towns and localities across the state.`}
-        links={districts.map((d) => ({
-          href: districtPath(d.slug),
-          label: d.name,
-          description: `${d.towns.length} towns · ${d.economy.slice(0, 2).join(', ')}`,
-        }))}
-      />
+
 
       <BlogWepzite location={STATE.name} />
       <Services />

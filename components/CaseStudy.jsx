@@ -15,7 +15,7 @@ const study = {
   industry: "Pest Control · Coimbatore",
   url: "www.blackantz.in",
   href: "https://www.blackantz.in",
-  image: "/Portfolio/www.blackantz.in.webp",
+  image: "//www.blackantz.in.webp",
   challenge:
     "Blackantz was getting almost all of its enquiries through word of mouth. They had no website, no Google Business Profile, and were invisible for the searches their customers were actually typing.",
   approach: [
@@ -134,7 +134,7 @@ export default function CaseStudy() {
             </dl>
 
             <Link
-              href="/portfolio"
+              href="/"
               className="group mt-7 inline-flex items-center gap-1.5 text-sm font-bold text-slate-900 transition-colors hover:text-emerald-600"
             >
               See more projects like this

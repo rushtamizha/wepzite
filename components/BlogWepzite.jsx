@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { openWhatsApp } from "@/utils/site";
 import { Section, SectionHeader } from "@/components/ui/Section";
+import Image from "next/image";
 
 export default function BlogWepzite({ location = "Tamil Nadu" }) {
   const facts = [
@@ -59,6 +60,17 @@ export default function BlogWepzite({ location = "Tamil Nadu" }) {
             plausible. A website is where that conversation is either won or
             quietly lost.
           </p>
+          <Image
+            src="https://res.cloudinary.com/deamsuypj/image/upload/v1789204200/website-development_pgiqtp.png"
+            alt="Website development illustration"
+            width={1200}
+            height={800}
+            placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/deamsuypj/image/upload/w_50,e_blur:1000,q_1/v1789204200/website-development_pgiqtp.png"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            quality={85}
+            className="pt-5 w-full h-auto rounded-xl object-cover"
+          />
 
           {/* ── */}
           <h3 className="mt-9 text-lg font-bold tracking-tight text-slate-900 sm:text-xl">
@@ -73,6 +85,18 @@ export default function BlogWepzite({ location = "Tamil Nadu" }) {
             you have no website and no Google listing, you are not losing to a
             better business — you are losing to a more visible one.
           </p>
+
+           <Image
+            src="https://res.cloudinary.com/deamsuypj/image/upload/v1789204199/fast-perfomance-focused-website_imsa9g.png"
+            alt="Website development illustration"
+            width={1200}
+            height={800}
+            placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/deamsuypj/image/upload/w_50,e_blur:1000,q_1/v1789204199/fast-perfomance-focused-website_imsa9g.png"
+            sizes="(max-width: 768px) 100dvw, 50dvw"
+            quality={85}
+            className="pt-5 w-full h-auto rounded-xl object-cover"
+          />
 
           {/* INLINE STAT STRIP */}
           <div className="mt-6 grid grid-cols-3 divide-x divide-slate-100 rounded-2xl border border-slate-100 bg-slate-50/60 py-4">
@@ -104,6 +128,17 @@ export default function BlogWepzite({ location = "Tamil Nadu" }) {
             you a single tap. It works at eleven at night when your shop is
             shut. It never has an off day.
           </p>
+          <Image
+            src="https://res.cloudinary.com/deamsuypj/image/upload/v1789204200/why-website-needed-for-small-business_jridpg.png"
+            alt="Website development illustration"
+            width={1200}
+            height={800}
+            placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/deamsuypj/image/upload/w_50,e_blur:1000,q_1/v1789204200/why-website-needed-for-small-business_jridpg.png"
+            sizes="(max-width: 768px) 100dvw, 50dvw"
+            quality={85}
+            className="pt-5 w-full h-auto rounded-xl object-cover"
+          />
           <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-[15px]">
             The opposite is also true, and it is where most money is lost
             quietly. A site that takes six seconds to load on a 4G connection,
@@ -143,6 +178,18 @@ export default function BlogWepzite({ location = "Tamil Nadu" }) {
             a website, but the whole path a customer takes from searching to
             messaging you:
           </p>
+
+           <Image
+            src="https://res.cloudinary.com/deamsuypj/image/upload/v1789204206/why-wepzite_osz7q8.png"
+            alt="Website development illustration"
+            width={1200}
+            height={800}
+            placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/deamsuypj/image/upload/w_50,e_blur:1000,q_1/v1789204206/why-wepzite_osz7q8.png"
+            sizes="(max-width: 768px) 100dvw, 50dvw"
+            quality={85}
+            className="pt-5 w-full h-auto rounded-xl object-cover"
+          />
 
           <ul className="mt-5 space-y-3">
             {[

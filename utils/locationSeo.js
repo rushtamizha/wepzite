@@ -75,7 +75,7 @@ export function buildLocationMetadata({
   path,
   placeName,
   geo,
-  ogImage = "/og/og-image.png",
+  ogImage = "/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png",
 }) {
   return {
     metadataBase: new URL(siteConfig.domain),
@@ -200,7 +200,7 @@ export function buildLocationJsonLd({
   trail = [],
   faq = [],
   areaServed = [],
-  ogImage = "/og/og-image.png",
+  ogImage = "/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png",
   placeType = "AdministrativeArea",
   containedIn,
 }) {

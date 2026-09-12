@@ -12,14 +12,16 @@ import {
   Gauge,
   Check,
 } from "lucide-react";
+import Image from "next/image";
 
 // Screenshots pulled from the live portfolio set in /public/Portfolio
-const showcase = "/Portfolio/www.blackantz.in.webp";
+const showcase =
+  "https://res.cloudinary.com/deamsuypj/image/upload/v1789117890/valparaiholidaytours.com_lsfzva.png";
 const proofThumbs = [
-  "/Portfolio/harizone.in.webp",
-  "/Portfolio/siloamdiagnostics.in.webp",
-  "/Portfolio/joshphotography.co.in.webp",
-  "/Portfolio/gmrtravels.co.in.webp",
+  "https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png",
+  "https://res.cloudinary.com/deamsuypj/image/upload/v1789117381/www.ortusaudios.in_oztd2p.png",
+  "https://res.cloudinary.com/deamsuypj/image/upload/v1789118281/chennaitopondicherryonewaytaxi.com_eqvu2y.png",
+  "https://res.cloudinary.com/deamsuypj/image/upload/v1789118287/mktravelscoimbatore.com_wi1axm.png",
 ];
 
 const stats = [
@@ -41,7 +43,11 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 export default function Hero() {
@@ -126,8 +132,9 @@ export default function Hero() {
             className="mt-5 max-w-xl text-sm font-medium leading-relaxed text-slate-500 sm:text-base"
           >
             We design, build and rank high-performance websites for businesses
-            across Tamil Nadu — engineeemerald with Next.js, optimised for Google,
-            and shipped in about a week. No templates, no monthly lock-in.
+            across Tamil Nadu — engineeemerald with Next.js, optimised for
+            Google, and shipped in about a week. No templates, no monthly
+            lock-in.
           </motion.p>
 
           {/* CTA ROW */}
@@ -184,13 +191,17 @@ export default function Hero() {
             <div className="flex shrink-0 -space-x-2.5">
               {proofThumbs.map((thumb, idx) => (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img
+                <Image
+                  alt="websites developed by Wepzite"
                   key={thumb}
                   src={thumb}
-                  alt=""
+                  width={1200}
+                  height={800}
+                  sizes="(max-width: 768px) 100dvw, 50dvw"
+                  quality={85}
                   aria-hidden="true"
                   loading="lazy"
-                  className="h-9 w-12 rounded-md border-2 border-white bg-white object-cover object-top shadow-sm ring-1 ring-slate-100"
+                  className="h-9 w-12 rounded-md border-2 border-white bg-white object-cover  shadow-sm ring-1 ring-slate-100"
                   style={{ zIndex: proofThumbs.length - idx }}
                 />
               ))}
@@ -248,7 +259,11 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 30, rotate: -1.5 }}
             animate={{ opacity: 1, y: 0, rotate: -1.5 }}
-            transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.8,
+              delay: 0.25,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             whileHover={{ rotate: 0, y: -6 }}
             className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl shadow-slate-900/10"
           >
@@ -264,12 +279,15 @@ export default function Hero() {
 
             {/* SITE SCREENSHOT */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={showcase}
               alt="Example of a business website designed and developed by Wepzite"
               width={1200}
               height={800}
-              fetchPriority="high"
+              sizes="(max-width: 768px) 100dvw, 50dvw"
+              quality={85}
+              aria-hidden="true"
+              loading="lazy"
               className="block h-auto w-full object-cover"
             />
           </motion.div>

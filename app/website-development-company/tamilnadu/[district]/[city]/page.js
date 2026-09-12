@@ -148,24 +148,6 @@ export default async function Page({ params }) {
       <GrowthSystem />
       <LeadForm />
       <Testimonials />
-
-      <AreaLinks
-        title={`We also build websites across ${district.name} district`}
-        subtitle={`${district.profile} Every town below has its own page and its own local SEO setup, not a shared district-wide one.`}
-        links={[
-          ...siblings.map((t) => ({
-            href: townPath(district.slug, t.slug),
-            label: t.name,
-            description: t.note,
-          })),
-          {
-            href: districtPath(district.slug),
-            label: `All of ${district.name} district`,
-            description: `Every town and locality we cover across ${district.name}.`,
-          },
-        ]}
-      />
-
       {/* Same array that feeds the FAQPage schema above — they must match. */}
       <Faq items={faqItems} />
       <FinalCta />

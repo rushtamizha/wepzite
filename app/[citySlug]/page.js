@@ -70,7 +70,7 @@ export async function generateMetadata({ params }) {
   const geo = getDistrictGeo(d.slug);
   const title = d.seo.title;
   const description = d.seo.description;
-  const ogImage = d.seo.ogImage || '/og/og-image.png';
+  const ogImage = d.seo.ogImage || '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png';
 
   return {
     metadataBase: new URL(siteConfig.domain),

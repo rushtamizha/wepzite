@@ -108,7 +108,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: data.seo?.ogImage || '/og/og-image.png',
+        url: data.seo?.ogImage || '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png',
         width: 1200,
         height: 630,
         alt: 'Wepzite NextJS Enterprise System Framework Layout',
@@ -123,7 +123,7 @@ export const metadata = {
     description: `Engineeemerald web systems for Theni enterprises. Premium Next.js apps, fluid WhatsApp automation, custom branding, and localized conversion optimization maps.`,
     site: '@wepzitedigital',
     creator: '@wepzitedigital',
-    images: [data.seo?.ogImage || '/og/og-image.png'],
+    images: [data.seo?.ogImage || '/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png'],
   },
 
   // Regional Geolocational Precision Tags
