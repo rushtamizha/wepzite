@@ -38,6 +38,30 @@ const MONO = "font-mono tabular-nums";
 const INR = (n) => (Number.isFinite(n) ? n.toLocaleString("en-IN") : "0");
 const digitsOnly = (v) => String(v).replace(/[^\d]/g, "");
 
+/**
+ * Fetches a same-origin asset as a bare base64 string (no data: prefix), or
+ * undefined on any failure. The PDF assets are fetched rather than inlined so
+ * they stay out of the JS bundle and get cached like any other file — and a
+ * missing font or mark must only ever cost the PDF its styling, never the
+ * client their contract.
+ */
+async function fetchBase64(url) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return undefined;
+    const blob = await res.blob();
+    const dataUrl = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+    return String(dataUrl).split(",")[1] || undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 function Field({ label, error, children, hint, wide = false }) {
   return (
     <div className={wide ? "sm:col-span-2" : undefined}>
@@ -279,42 +303,27 @@ export default function AgreementForm() {
     setPdfState("working");
     setPdfError("");
     try {
-      // Both the PDF engine and the builder load on demand, so this page costs
-      // nothing extra to visit.
-      const [{ jsPDF }, { buildAgreementPdf }] = await Promise.all([
-        import("jspdf"),
-        import("@/utils/agreementPdf"),
-      ]);
-
-      // The brand mark is fetched rather than inlined as base64, so it stays
-      // out of the JS bundle and gets cached like any other image. A failure
-      // here must never cost the client their contract, so the header simply
-      // falls back to type alone.
-      let logo;
-      try {
-        const res = await fetch("/logo-mark.png");
-        if (res.ok) {
-          const blob = await res.blob();
-          logo = {
-            format: "PNG",
-            dataUrl: await new Promise((resolve, reject) => {
-              const reader = new FileReader();
-              reader.onload = () => resolve(reader.result);
-              reader.onerror = reject;
-              reader.readAsDataURL(blob);
-            }),
-          };
-        }
-      } catch {
-        logo = undefined;
-      }
+      // The PDF engine, the builder, the brand mark and the three Space
+      // Grotesk weights all load on demand, so this page costs nothing extra
+      // to visit. The mark is the white ∞ cut out of the logo, drawn onto the
+      // emerald hero; the builder falls back to Helvetica if a weight is missing.
+      const [{ jsPDF }, { buildAgreementPdf }, mark, regular, medium, bold] =
+        await Promise.all([
+          import("jspdf"),
+          import("@/utils/agreementPdf"),
+          fetchBase64("/logo-mark-white.png"),
+          fetchBase64("/fonts/SpaceGrotesk-Regular.ttf"),
+          fetchBase64("/fonts/SpaceGrotesk-Medium.ttf"),
+          fetchBase64("/fonts/SpaceGrotesk-Bold.ttf"),
+        ]);
 
       const { doc, filename } = buildAgreementPdf({
         jsPDF,
         party: agreementParty,
         terms: agreementTerms,
         pkg: selectedPackage,
-        logo,
+        logo: mark ? { dataUrl: `data:image/png;base64,${mark}`, format: "PNG" } : undefined,
+        fonts: { regular, medium, bold },
         form: {
           ...form,
           phone: form.phone.trim(),
@@ -665,7 +674,7 @@ export default function AgreementForm() {
                     <span className="font-bold text-slate-700">{agreementParty.legalName}</span>{" "}
                     (&ldquo;the Service Provider&rdquo;) and{" "}
                     <span className="font-bold text-slate-700">
-                      {form.businessName || form.fullName || "the Client"}
+                      {form.fullName || "the Client"}
                     </span>{" "}
                     (&ldquo;the Client&rdquo;), governed by {agreementParty.governingLaw}.
                   </p>

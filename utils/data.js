@@ -14,7 +14,10 @@ import {
   Car,
   Clock,
   Shield,
-  Home
+  Home,
+  BookAIcon,
+  Signature,
+  Info
 } from 'lucide-react';
 
 // Example structure matching the layout engine
@@ -54,15 +57,19 @@ export const navData = [
     name: "Our Works",
     icon: <Layers size={16} />,
     link:"/portfolio"
-  }, 
+  },
   {
     name: "Pricing",
     link: "/pricing",
     icon: <DollarSign size={16} />
   },
-  // {
-  //   name: "About",
-  //   link: "/about",
-  //   icon: <DollarSign size={16} />
-  // }
+  {
+    name: "Agreement",
+    link: "/agreement",
+    icon: <Signature size={16} />
+  }, {
+    name: "About",
+    link: "/about",
+    icon: <Info size={16} />
+  }
 ];

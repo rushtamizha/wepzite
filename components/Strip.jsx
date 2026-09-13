@@ -188,7 +188,7 @@ export default function Technology() {
         viewport={{ once: true, margin: "" }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="relative -mx-4  px-4"
-        aria-label="Technologies Wepzite builds with"
+        aria-label=" Wepzite builds with"
       >
         {/* EDGE FADE */}
         <div

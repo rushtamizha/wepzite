@@ -35,7 +35,7 @@ export default function TermsPage() {
     <LegalPage
       eyebrow="Legal"
       title="Terms & Conditions"
-      intro="Please parse these conditions carefully before executing project orders. These operational rules formulate a legally binding commercial layout mapping your project lifecycle parameters with wepzite Technologies."
+      intro="Please parse these conditions carefully before executing project orders. These operational rules formulate a legally binding commercial layout mapping your project lifecycle parameters with wepzite ."
       clauses={clauses}
     />
   );

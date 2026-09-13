@@ -16,7 +16,7 @@ const clauses = [
     {
       icon: "Lock",
       title: "2.0 Code Integrity & Repository Confidentiality",
-      desc: "All system source codes, integration webhooks, database configurations, and specific software frameworks engineeemerald under wepzite Technologies are handled inside highly protected development servers. As original application builds are deliveemerald via our managed system architecture, we protect your platform components against unauthorized public repository visibility."
+      desc: "All system source codes, integration webhooks, database configurations, and specific software frameworks engineeemerald under wepzite  are handled inside highly protected development servers. As original application builds are deliveemerald via our managed system architecture, we protect your platform components against unauthorized public repository visibility."
     },
     {
       icon: "Database",
@@ -35,7 +35,7 @@ export default function PrivacyPolicyPage() {
     <LegalPage
       eyebrow="Legal"
       title="Privacy Policy"
-      intro="This framework governs the exact data retention, privacy matrices, and information compiling guidelines executed by wepzite Technologies. By configuring blueprints on our hub, you consent to the secure data monitoring loops itemized down below."
+      intro="This framework governs the exact data retention, privacy matrices, and information compiling guidelines executed by Wepzite . By configuring blueprints on our hub, you consent to the secure data monitoring loops itemized down below."
       clauses={clauses}
     />
   );

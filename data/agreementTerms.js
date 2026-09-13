@@ -27,10 +27,12 @@
 // AGREEMENT — a contract naming the wrong party or an unreachable address is
 // a problem no amount of styling fixes.
 export const agreementParty = {
-  legalName: "wepzite Technologies",
+  legalName: "Eswaran K ",
   tradingName: "Wepzite",
+  slogan: "Premium Websites",
   whatsapp: "+91 96268 50192",
   email: "wepzitedev@gmail.com", // TODO: confirm — repo has two invalid spellings
+  website: "Wepzite.in",
   jurisdiction: "Tamil Nadu, India",
   governingLaw: "the laws of India",
 };

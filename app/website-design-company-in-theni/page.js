@@ -241,7 +241,7 @@ function compileComprehensiveJsonLdGraph(d) {
   const serviceCatalogSchema = {
     '@context': 'https://schema.org',
     '@type': 'OfferCatalog',
-    name: 'Magnivel Technologies Strategic Delivery Suite',
+    name: 'Wepzite Strategic Delivery Suite',
     itemListElement: servicesOffeemeraldList.map((svc, i) => ({
       '@type': 'ListItem',
       position: i + 1,

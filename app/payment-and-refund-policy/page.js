@@ -40,7 +40,7 @@ export default function PaymentPolicyPage() {
     <LegalPage
       eyebrow="Legal"
       title="Payment & Refund Policy"
-      intro="This transactional charter defines the strict processing parameters, design billing benchmarks, support liabilities, copyright integrity standards, and refund restrictions executed globally by wepzite Technologies."
+      intro="This transactional charter defines the strict processing parameters, design billing benchmarks, support liabilities, copyright integrity standards, and refund restrictions executed globally by wepzite ."
       clauses={clauses}
     />
   );
