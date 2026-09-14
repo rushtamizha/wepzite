@@ -67,9 +67,10 @@ export const navData = [
     name: "Agreement",
     link: "/agreement",
     icon: <Signature size={16} />
-  }, {
-    name: "About",
-    link: "/about",
-    icon: <Info size={16} />
-  }
+  },
+  // {
+  //   name: "About",
+  //   link: "/about",
+  //   icon: <Info size={16} />
+  // }
 ];

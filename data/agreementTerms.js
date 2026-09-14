@@ -40,12 +40,9 @@ export const agreementParty = {
 // ---------------------------------------------------------------------------
 // THE CLAUSES
 // ---------------------------------------------------------------------------
-// ⚠️ Clause 07 conflicts with the published policy at
-// /payment-and-refund-policy, which grants a 7-day refund window ("Refund
-// requests are subject to an absolute 7-day expiration ceiling"). This clause
-// says advances are non-refundable from the outset. Both cannot be true, and
-// the published policy is the one a payment gateway and a consumer forum will
-// read first. Reconcile the two.
+// Clauses 05–08 (client delays, renewal, refunds, ownership and the footer
+// credit) are also stated on /terms and /payment-and-refund-policy. Change all
+// three together: a client will quote whichever version favours them.
 export const agreementTerms = [
   {
     n: "01",
@@ -70,22 +67,22 @@ export const agreementTerms = [
   {
     n: "05",
     title: "Client Responsibilities",
-    body: "Client must provide accurate information, share content and assets, and give timely feedback. Delays from the client may extend delivery time.",
+    body: "Client must provide accurate information, share content and assets, and give timely feedback. Delays from the client extend delivery time. If the Client does not respond for 15 days the project is paused, and if there is no response 30 days after the last contact the project is closed and the advance is not refunded.",
   },
   {
     n: "06",
     title: "Payments",
-    body: "Full balance required before final handover. Maintenance services billed monthly in advance.",
+    body: "Full balance required before final handover. A renewal fee equal to the package price is due every year to keep the website live, hosted and supported; if it is not paid within 7 days of the due date, the website is suspended. Maintenance services are billed monthly in advance.",
   },
   {
     n: "07",
     title: "Refund Policy",
-    body: "Advance payments are strictly non-refundable, even if work has not yet started. Refund is only applicable if Wepzite is unable to take up the project.",
+    body: "The advance is refunded in full if the project is cancelled within 7 days of payment and before work has started, or if Wepzite is unable to take up the project. Once work has started, or after 7 days, payments are non-refundable.",
   },
   {
     n: "08",
     title: "Intellectual Property",
-    body: "After full payment, deliverables belong to the client. Wepzite may showcase work in its portfolio.",
+    body: "Wepzite retains ownership of the source code and design. After full payment, and while renewals are paid, the Client has a licence to use the website for their business; the Client's own content remains theirs. Removing the \"Developed by wepzite.in\" footer credit without written permission makes a fee of three times the project value payable. Wepzite may showcase work in its portfolio.",
   },
   {
     n: "09",

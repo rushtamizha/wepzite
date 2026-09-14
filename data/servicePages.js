@@ -22,7 +22,7 @@ export const servicePages = {
       "Mobile-first layouts that work on every screen size",
     ],
     techStack: ["Next.js", "React", "Tailwind CSS", "Vercel"],
-    thumbnail: "/Portfolio/www.blackantz.in.webp",
+    thumbnail: "https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png",
   },
   "app-development": {
     slug: "app-development",

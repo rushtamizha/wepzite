@@ -49,13 +49,13 @@ const iconMap = {
  */
 export default function LegalPage({ eyebrow, title, intro, updated, clauses }) {
   return (
-    <main className="relative w-full overflow-hidden bg-slate-50 px-4 pb-20 pt-32 lg:pt-36">
+    <main className="relative w-full overflow-hidden bg-white px-4 pb-20 pt-32 lg:pt-36">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-32 top-0 h-[500px] w-[500px] rounded-full bg-brand-400/[0.07] blur-3xl"
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-3xl">
+      <div className="relative z-10 mx-auto w-full max-w-7xl">
         <Link
           href="/"
           className="group mb-8 inline-flex items-center gap-2 text-xs font-bold text-slate-400 transition-colors hover:text-brand-600"
@@ -67,7 +67,7 @@ export default function LegalPage({ eyebrow, title, intro, updated, clauses }) {
           <span>Back to home</span>
         </Link>
 
-        <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm md:p-10">
+        <div className="  bg-white p-6  md:p-10">
           <header className="border-b border-slate-100 pb-7">
             {eyebrow && (
               <span className="inline-block rounded-full border border-brand-100 bg-brand-50 px-3 py-1 text-[10px] font-black uppercase tracking-wide text-brand-700">
@@ -96,9 +96,9 @@ export default function LegalPage({ eyebrow, title, intro, updated, clauses }) {
               return (
                 <section
                   key={idx}
-                  className="rounded-2xl border border-slate-200/70 bg-white p-5 transition-colors duration-300 hover:border-slate-300"
+                  className=" bg-white transition-colors duration-300 hover:border-slate-300"
                 >
-                  <h2 className="flex items-start gap-2.5 text-sm font-bold text-slate-900">
+                  <h2 className="flex items-center gap-2.5 text-sm font-bold text-slate-900">
                     {Icon && (
                       <span className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-brand-600">
                         <Icon className="h-4 w-4" />
