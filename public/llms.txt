@@ -1,0 +1,18 @@
+# Your Project or Business Name
+
+> Brief 1-2 sentence description explaining what your site, business, or API does.
+
+## Key Information
+- Core Service / Product 1: Concise summary of feature, offering, or focus area.
+- Core Service / Product 2: Concise summary of feature, offering, or focus area.
+- Pricing: Short note on plans or pricing model.
+- Contact: wepzitedev@gmail.com
+
+## Documentation & Key Links
+- [Getting Started](https://wepzite.in): Quickstart guide and overview.
+- [ Pricing](https://wepzite.in/pricing): Complete breakdown of packages.
+- [Services ](https://wepzite.in/services): Developer documentation and endpoints.
+- [About Us](https://wepzite.in/about): Background, mission, and company information.
+
+## Optional Extended Context
+- [Full LLM Context](https://wepzite.in/llms.txt): Detailed documentation for advanced LLM ingestion.

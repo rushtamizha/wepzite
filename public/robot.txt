@@ -1,0 +1,34 @@
+# Allow standard web search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Allow AI search engines for citations and discovery
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block bulk LLM training and data scraping crawlers
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: CCBot
+User-agent: FacebookBot
+User-agent: Meta-ExternalAgent
+User-agent: Bytespider
+User-agent: MistralBot
+User-agent: cohere-ai
+Disallow: /
+
+# General rule for all other crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wepzite.in/sitemap.xml
