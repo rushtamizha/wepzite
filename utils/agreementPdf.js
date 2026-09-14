@@ -522,7 +522,26 @@ function createCursor(doc, onNewPage) {
 
 // --- document furniture ----------------------------------------------------
 
-function drawHero(doc, T, { party, logo, clientName, clientBusinessname, cells }) {
+/**
+ * The emerald page-one hero. Its wording defaults to the agreement's; the
+ * quotation passes its own title, eyebrow and pill, plus a `note` (the project
+ * name) that follows the client on the "Prepared for" line.
+ */
+function drawHero(
+  doc,
+  T,
+  {
+    party,
+    logo,
+    clientName,
+    clientBusinessname,
+    cells,
+    title = ["Client Service", "Agreement"],
+    eyebrow = "Client copy  ·  Signed electronically",
+    pill = "Confidential",
+    note,
+  },
+) {
   const { x, y, w, h, r } = HERO;
   const left = M.left;
 
@@ -568,7 +587,7 @@ function drawHero(doc, T, { party, logo, clientName, clientBusinessname, cells }
     tileY + 30,
   );
 
-  const pillLabel = "Confidential";
+  const pillLabel = pill;
   const pillTextW = T.trackedWidth(pillLabel, { size: 6.2, cs: 1.2 });
   const pillH = 20;
   const pillW = 24 + pillTextW + 12;
@@ -591,7 +610,7 @@ function drawHero(doc, T, { party, logo, clientName, clientBusinessname, cells }
   doc.setDrawColor(...C.brand100);
   doc.setLineWidth(1);
   doc.line(left, y + 95.8, left + 18, y + 95.8);
-  T.tracked("Client copy  ·  Signed electronically", left + 26, y + 98, {
+  T.tracked(eyebrow, left + 26, y + 98, {
     size: 6.6,
     cs: 1.4,
     color: C.brand100,
@@ -600,17 +619,32 @@ function drawHero(doc, T, { party, logo, clientName, clientBusinessname, cells }
   // Large type sits optically right of its box; -1.5pt pulls the stems onto
   // the margin the rest of the page hangs from.
   T.set("bold", 36, C.white);
-  doc.text("Client Service", left - 1.5, y + 141, { charSpace: -0.8 });
+  doc.text(title[0], left - 1.5, y + 141, { charSpace: -0.8 });
   T.set("bold", 36, C.brand100);
-  doc.text("Agreement", left - 1.5, y + 179, { charSpace: -0.8 });
+  doc.text(title[1], left - 1.5, y + 179, { charSpace: -0.8 });
 
   const prefix = "Prepared for ";
   const prefixW = T.width(prefix, "regular", 10);
-  const name = T.fit(clientBusinessname || clientName, "medium", 10, 380 - prefixW);
+  const room = 380 - prefixW;
+  const sep = "  ·  ";
+  const sepW = note ? T.width(sep, "regular", 10) : 0;
+  // With a note the name keeps at least half the line; the note takes the rest.
+  const nameRoom = note
+    ? Math.max(room - sepW - T.width(T.clean(note), "medium", 10), room / 2)
+    : room;
+  const name = T.fit(clientBusinessname || clientName, "medium", 10, nameRoom);
+  const nameW = T.width(name, "medium", 10);
+  const noteText = note ? T.fit(note, "medium", 10, room - nameW - sepW) : "";
   T.set("regular", 10, C.onBrandMuted);
   doc.text(prefix, left, y + 205);
   T.set("medium", 10, C.white);
   doc.text(name, left + prefixW, y + 205);
+  if (note) {
+    T.set("regular", 10, C.onBrandMuted);
+    doc.text(sep, left + prefixW + nameW, y + 205);
+    T.set("medium", 10, C.white);
+    doc.text(noteText, left + prefixW + nameW + sepW, y + 205);
+  }
 
   // ---- Meta strip ---------------------------------------------------------
   const stripH = 42;
@@ -1321,3 +1355,31 @@ export function buildAgreementPdf({ jsPDF, form, pkg, party, terms, logo, fonts 
     filename: `wepzite-agreement-${safeName}-${reference}.pdf`,
   };
 }
+
+// The drawing kit, shared with utils/quotationPdf.js so the quotation and the
+// agreement stay one visual system instead of two copies that drift apart.
+export {
+  PAGE,
+  M,
+  CONTENT_W,
+  RIGHT,
+  HERO,
+  C,
+  registerFonts,
+  typeKit,
+  layoutText,
+  drawText,
+  alpha,
+  hairline,
+  fillGradient,
+  clipRoundedRect,
+  glow,
+  dotField,
+  markTile,
+  tick,
+  checkBadge,
+  createCursor,
+  drawHero,
+  sectionHeading,
+  issueDates,
+};
