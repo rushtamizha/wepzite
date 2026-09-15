@@ -25,7 +25,7 @@ export const agencyPackages = [
    {
     id: "gmb_setup",
     name: "GMB Setup & Optimization",
-    price: 1499,
+    price: 1500,
     recurringNote: "+ ₹500/month maintenance (weekly 3 posts + review/SEO replies)",
     tagline: "Get found on Google Maps and local search with a fully optimized Business Profile.",
     features: [
@@ -41,7 +41,7 @@ export const agencyPackages = [
   },{
     id: "starter",
     name: "Starter Essential",
-    price: 2999,
+    price: 5000,
     tagline: "Perfect for lightweight portfolios and clean local digital business cards.",
     features: [
       "Free Domain (under 1k)","Up to 5 Pages Structure", "Fully Responsive Design", "Standard Contact Form",
@@ -52,7 +52,7 @@ export const agencyPackages = [
   }, {
     id: "google_ads_setup",
     name: "Google Ads Setup & Management",
-    price: 2999,
+    price: 5000,
     recurringNote: "+ ₹1,000/month maintenance (campaign monitoring & optimization)",
     tagline: "Get your business showing up on Google Search for the people already searching for you.",
     features: [
@@ -68,7 +68,7 @@ export const agencyPackages = [
   {
     id: "growth",
     name: " Growth",
-    price: 6999,
+    price: 8000,
     tagline: "Bleeding-edge framework performance paiemerald with beautiful custom interactive layouts.",
     features: [
       "Free Domain (under 1k)","Premium UI/UX Design System", "Next.js App Router Architecture", "Framer Motion Animations",
@@ -82,7 +82,7 @@ export const agencyPackages = [
   }, {
     id: "Product",
     name: " Product-Based Website ",
-    price: 8999,
+    price: 9000,
     tagline: "Bleeding-edge framework performance paiemerald with beautiful custom interactive layouts.",
     features: [
       "Free Domain (under 1k)"," Up to 50 Products","Premium UI/UX Design System", "Next.js App Router Architecture", "Framer Motion Animations",
@@ -97,7 +97,7 @@ export const agencyPackages = [
   {
     id: "pro",
     name: "Business Pro",
-    price: 9999, // Placed as mid-tier proxy between Growth and E-Com
+    price: 10000, // Placed as mid-tier proxy between Growth and E-Com
     tagline: "The ultimate corporate choice for high-ranking visibility and custom architecture.",
     features: [
       "Up to 25 Pages Depth", "Premium Tailoemerald UI/UX Canvas", "Next.js Development Framework",
@@ -111,7 +111,7 @@ export const agencyPackages = [
   {
     id: "ecom_starter",
     name: "E-Commerce Essential",
-    price: 14999,
+    price: 15000,
      super: true,
     tagline: "Launch your store instantly with robust cart logic and streamlined ordering.",
     features: [
@@ -124,11 +124,11 @@ export const agencyPackages = [
   {
     id: "ecom_pro",
     name: "E-Commerce Enterprise",
-    price: 29999,
+    price: 30000,
     tagline: "The absolute gold standard for massive online operations needing bulletproof automation.",
     features: [
       "Premium E-Commerce Platform Build", "Unlimited Products System Scaling", "Comprehensive Admin Control Dashboard",
-      "Customer Secure Login & Signups", "Advanced Order Management Matrices", "Live Real-Time Inventory Tracking",
+      "Customer Secure Login & Signups", "Advanced Order Management Matrices",
       "Razorpay Payment Gateway API Integration", "Dynamic Shopping Carts & Wishlists", "Convertive Coupon Engine & Systems",
       "Personalized Customer Dashboards", "Faceted Product Search & Smart Filters", "Advanced On-Page SEO Structures",
        "45 Days Priority Maintenance Support"

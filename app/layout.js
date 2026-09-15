@@ -72,7 +72,7 @@ export const metadata = {
     siteName: siteConfig.companyName,
     title: "Wepzite — Website Design & Development Company in Tamil Nadu",
     description:
-      "Next.js websites, apps, e-commerce, AI branding, GMB setup, Google Ads & Meta Ads — for businesses across Tamil Nadu.Packages from ₹2,999.",
+      "Next.js websites, apps, e-commerce, AI branding, GMB setup, Google Ads & Meta Ads — for businesses across Tamil Nadu.Packages from ₹5,000.",
     images: [
       {
         url: "/https://res.cloudinary.com/deamsuypj/image/upload/v1789117379/sbttours.com_rkjpfb.png",

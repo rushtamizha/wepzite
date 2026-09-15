@@ -26,7 +26,7 @@ export default function Faq({ items }) {
   const defaultFaqItems = [
     {
       q: "How much does a website cost in Tamil Nadu?",
-      a: "A business website from Wepzite starts at \u20b92,999 for a five-page Starter Essential build, and most businesses choose the \u20b96,999 Growth plan. Business Pro is \u20b99,999 and online stores start at \u20b914,999. Every price is one-time and fixed before work begins \u2014 it covers design, development, hosting deployment, SSL and a free first-year domain, with no monthly platform fee and no per-page charges."
+      a: "A business website from Wepzite starts at \u20b92,999 for a five-page Starter Essential build, and most businesses choose the \u20b98000 Growth plan. Business Pro is \u20b99,999 and online stores start at \u20b914,999. Every price is one-time and fixed before work begins \u2014 it covers design, development, hosting deployment, SSL and a free first-year domain, with no monthly platform fee and no per-page charges."
     },
     {
       q: "How long does it take to build a website?",
@@ -34,7 +34,7 @@ export default function Faq({ items }) {
     },
     {
       q: "Do you set up and optimise Google Business Profile?",
-      a: "Yes \u2014 GMB Setup & Optimization is \u20b91,499 as a standalone service. It covers creating or claiming the profile, category and business-info optimisation, logo and cover photos, your service and product listings, business hours and location mapping, Q&A seeding, and Google Maps pin verification support. We also run a NAP consistency check so the name, address and phone on your profile match your website exactly."
+      a: "Yes \u2014 GMB Setup & Optimization is \u20b91500 as a standalone service. It covers creating or claiming the profile, category and business-info optimisation, logo and cover photos, your service and product listings, business hours and location mapping, Q&A seeding, and Google Maps pin verification support. We also run a NAP consistency check so the name, address and phone on your profile match your website exactly."
     },
     {
       q: "Will my website show up for \u201cnear me\u201d searches in Tamil Nadu?",

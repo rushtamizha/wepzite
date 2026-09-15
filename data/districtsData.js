@@ -1608,7 +1608,7 @@ function buildDefaults(slug, name) {
     faq: [
       {
         q: `How much does a website cost for a business in ${name}?`,
-        a: 'Websites start at \u20b92,999 for a five-page Starter Essential build, with most businesses choosing the \u20b96,999 Growth plan. Business Pro is \u20b99,999 and online stores start at \u20b914,999. Pricing is one-time and fixed before work begins \u2014 design, development, hosting deployment, SSL and a free first-year domain included, with no monthly platform fee.',
+        a: 'Websites start at \u20b92,999 for a five-page Starter Essential build, with most businesses choosing the \u20b98000 Growth plan. Business Pro is \u20b99,999 and online stores start at \u20b914,999. Pricing is one-time and fixed before work begins \u2014 design, development, hosting deployment, SSL and a free first-year domain included, with no monthly platform fee.',
       },
       {
         q: `How long does it take to build a website for a business in ${name}?`,
@@ -1616,7 +1616,7 @@ function buildDefaults(slug, name) {
       },
       {
         q: `Do you set up and optimise Google Business Profile for businesses in ${name}?`,
-        a: `Yes \u2014 GMB Setup & Optimization is \u20b91,499 as a standalone service, and it is what puts you in the Google Maps results for ${name}. It covers creating or claiming the profile, category and business-info optimisation, logo and cover photos, service and product listings, business hours and location mapping, Q&A seeding, and Maps pin verification support, plus a NAP consistency check so your profile matches your website exactly.`,
+        a: `Yes \u2014 GMB Setup & Optimization is \u20b91500 as a standalone service, and it is what puts you in the Google Maps results for ${name}. It covers creating or claiming the profile, category and business-info optimisation, logo and cover photos, service and product listings, business hours and location mapping, Q&A seeding, and Maps pin verification support, plus a NAP consistency check so your profile matches your website exactly.`,
       },
       {
         q: `Will my website rank for \u201cnear me\u201d searches in ${name}?`,
